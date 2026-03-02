@@ -6,6 +6,8 @@
 
 **Notation.** Formula parameters are written as named quantities ($\text{radius}$, $\text{height}$); elsewhere standard variables apply.
 
+<!-- canonical set: Definition. Theorem. Lemma. Corollary. Proposition. Proof. Remark. Notation. Convention. Example. (Proposition) -->
+
 <!-- Use semantic LaTeX commands instead of literal or Unicode symbols -->
 
 <!--
@@ -46,7 +48,15 @@
 
 ---
 
-## Areas
+$$
+(A, B, C) \in (0, \pi)^3 \iff A \in (0, \pi),\ B \in (0, \pi),\ C \in (0, \pi)
+$$
+
+$$
+(a, b, c) \in (\mathbb{R}^+)^3 \iff a \in \mathbb{R}^+,\ b \in \mathbb{R}^+,\ c \in \mathbb{R}^+
+$$
+
+## Area
 
 $$
 \begin{aligned}
@@ -59,7 +69,7 @@ $$
 \end{aligned}
 $$
 
-## Perimeters
+## Perimeter
 
 $$
 \begin{aligned}
@@ -70,7 +80,7 @@ $$
 \end{aligned}
 $$
 
-## Volumes
+## Volume
 
 $$
 \begin{aligned}
@@ -83,7 +93,7 @@ $$
 \end{aligned}
 $$
 
-## Surface Areas
+## Surface Area
 
 $$
 \begin{aligned}
@@ -95,78 +105,86 @@ $$
 \end{aligned}
 $$
 
-## Cubes
+## Cube
+
+**Definition** (cube).
 
 $$
-\text{volume(cube)} = \text{side}^3
+\{\text{side} \in \mathbb{R}^+ \mid \text{all edges} = \text{side}\}
+$$
+
+**Proposition.**
+
+$$
+\text{side}^3 \quad \text{(volume)}
 $$
 
 $$
-\text{face diagonal(cube)} = \text{side} \cdot \sqrt{2}
+6 \cdot \text{side}^2 \quad \text{(surface area)}
 $$
 
 $$
-\text{space diagonal(cube)} = \text{side} \cdot \sqrt{3}
+\text{side} \cdot \sqrt{2} \quad \text{(face diagonal)}
 $$
 
-## Triangles
+$$
+\text{side} \cdot \sqrt{3} \quad \text{(space diagonal)}
+$$
+
+## Triangle
 
 **Definition** (triangle).
 
 $$
-\{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\}
+\{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\}, \quad (A, B, C) \in (0, \pi)^3
 $$
 
-### Classification
-
-#### Scalene
+**Theorem** (angle sum).
 
 $$
-a \neq b \neq c \neq a
+A + B + C = \pi
 $$
 
-#### Isosceles
+**Remark** (classification).
 
 $$
-a = b \neq c
+a \neq b \neq c \neq a \quad \text{(scalene)}
 $$
 
-#### Equilateral
-
 $$
-a = b = c
+a = b \neq c \quad \text{(isosceles)}
 $$
 
-#### Acute
-
 $$
-A < \frac{\pi}{2},\ B < \frac{\pi}{2},\ C < \frac{\pi}{2}
+a = b = c \quad \text{(equilateral)}
 $$
 
-#### Right
-
 $$
-a^2 + b^2 = c^2
+A < \frac{\pi}{2},\ B < \frac{\pi}{2},\ C < \frac{\pi}{2} \quad \text{(acute)}
 $$
 
-#### Obtuse
-
 $$
-\exists \angle > \frac{\pi}{2}
+a^2 + b^2 = c^2 \quad \text{(right)}
 $$
 
-### Area
+$$
+A > \frac{\pi}{2} \lor B > \frac{\pi}{2} \lor C > \frac{\pi}{2} \quad \text{(obtuse)}
+$$
+
+**Proposition** (area).
 
 $$
 \frac{1}{2} \cdot \text{base} \cdot \text{height}
 $$
 
+**Corollary.**
+
 $$
-\text{area(isosceles triangle)} = \frac{\text{base}}{4} \cdot \sqrt{4 \cdot \text{leg}^2 - \text{base}^2}
+\frac{\text{base}}{4} \cdot \sqrt{4 \cdot \text{leg}^2 - \text{base}^2} \quad \text{(isosceles)}
 $$
 
 $$
-\text{area(equilateral triangle)} = \frac{\sqrt{3}}{4} \cdot \text{side}^2
+\frac{\sqrt{3}}{4} \cdot \text{side}^2  \quad \text{(equilateral)}
 $$
 
 ## Derivatives
