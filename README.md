@@ -6,26 +6,41 @@
 
 **Notation.** Formula parameters are written as named quantities ($\text{radius}$, $\text{height}$); elsewhere standard variables apply.
 
-<!-- Editorial canonical label
+<!-- Editorial labels
 
-Axiom
-Postulate
-Definition
-Theorem
-Proposition
-Lemma
-Corollary
-Proof
-Conjecture
-Remark
-Notation
-Convention
+Axiom / Postulate: Fundamental assumed truth; the unproven foundation of a system.
+
+Definition: Precise statement establishing the exact meaning of a concept.
+
+Theorem: Major, highly significant mathematical statement that has been proven.
+
+Proposition: Important, useful, standalone proven fact, lesser in scope than a theorem.
+
+Lemma: Helper result proven primarily to step toward a larger theorem.
+
+Corollary: Direct, immediate consequence of a preceding theorem or proposition.
+
+Property: Inherent, easily derived characteristic of a formally defined mathematical object.
+
+Claim: Localized, minor assertion often used internally within a larger proof.
+
+Proof: Rigorous logical deduction establishing the truth of a Theorem, Proposition, Lemma, or Claim.
+
+Conjecture: Educated guess believed true but currently lacking rigorous proof.
+
+Convention: Agreed-upon rule chosen to resolve ambiguity among valid options.
+
+Notation: Explicit assignment of symbols or shorthand to represent mathematical concepts.
+
+Remark: Extra context, historical note, useful perspective or subtle observation for the reader.
+
+Example: Concrete, specific instance illustrating a definition, theorem, or concept.
 
 -->
 
 <!-- Use semantic LaTeX commands (e.g. \lt) instead of literal or Unicode symbols -->
 
-<!-- Space around `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, etc; Space after commas; `\quad` for spacing -->
+<!-- Use spaces around `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, etc; Space after commas; `\quad` for spacing -->
 
 ---
 
