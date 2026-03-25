@@ -2,7 +2,7 @@
 
 <!-- a place that holds everything in a form that actually makes sense to me, not scattered across textbooks with different notations and different levels of rigor. -->
 
-# math-notes
+# math-ref
 
 **Convention.** Each formula is a canonical representative of its equivalence class.
 
@@ -638,7 +638,7 @@ $$
 | 19 | 38 | 57 | 76 | 95 | 114 | 133 | 152 | 171 |    | 209 |    |    |    |    |    |    |    | 361 |    |
 | 20 | 40 | 60 | 80 | 100 | 120 | 140 | 160 | 180 |    | 220 |    |    |    |    |    |    |    |    | 400 |
 
-## Prime
+## Prime numbers
 
 | # | Prime |
 |---|------|
