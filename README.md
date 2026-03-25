@@ -1,5 +1,7 @@
 (Personal notebook. Under construction...)
 
+<!-- a place that holds everything in a form that actually makes sense to me, not scattered across textbooks with different notations and different levels of rigor. -->
+
 # math-notes
 
 **Convention.** Each formula is a canonical representative of its equivalence class.
@@ -61,6 +63,68 @@ Example: Concrete, specific instance illustrating a definition, theorem, or conc
 [VI Applied Mathematics](#part-vi-applied-mathematics)
 
 ---
+
+## Logic
+
+**Notation.**
+
+$$
+\neg p \quad \text{(negation)}
+$$
+
+$$
+p \land q \quad \text{(conjunction)}
+$$
+
+$$
+p \lor q \quad \text{(disjunction)}
+$$
+
+$$
+p \oplus q \quad \text{(exclusive or)}
+$$
+
+$$
+p \to q \quad \text{(implication)}
+$$
+
+$$
+p \iff q \quad \text{(biconditional)}
+$$
+
+**Notation** (contrapositive and inverse).
+
+$$
+p \to q \iff \neg q \to \neg p \quad \text{(contrapositive)}
+$$
+
+$$
+p \to q \implies \neg p \to \neg q \quad \text{(inverse)}
+$$
+
+## Sets
+
+**Notation.**
+
+$$
+A \cup B \quad \text{(union)}
+$$
+
+$$
+A \cap B \quad \text{(intersection)}
+$$
+
+$$
+A \setminus B \quad \text{(difference)}
+$$
+
+$$
+A^c \quad \text{(complement)}
+$$
+
+$$
+A \oplus B \quad \text{(symmetric difference)}
+$$
 
 ## Triangle
 
