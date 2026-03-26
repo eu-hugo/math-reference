@@ -384,10 +384,16 @@ $$
 \frac{a^2 \cdot \sin B \cdot \sin C}{2 \cdot \sin A}
 $$
 
-**Theorem** (Heron).
+**Theorem** (Heron's formula).
 
 $$
-\text{area} =\sqrt{s(s-a)(s-b)(s-c)}, \quad s = \frac{a + b + c}{2}
+\sqrt{s(s-a)(s-b)(s-c)}, \quad s = \frac{a + b + c}{2}
+$$
+
+**Proposition** (perimeter).
+
+$$
+a + b + c
 $$
 
 **Definition** (congruence).
@@ -746,6 +752,9 @@ $$
 # Appendix I
 # Appendix II
 # Appendix III
+
+Definition table
+Lookup table
 
 ## Symbol
 
