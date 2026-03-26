@@ -2,8 +2,6 @@
 
 <!-- a place that holds everything in a form that actually makes sense to me, not scattered across textbooks with different notations and different levels of rigor. -->
 
-# math-ref
-
 **Convention.** Each formula is a canonical representative of its equivalence class.
 
 **Notation.** Formula parameters are written as named quantities (e.g. $\text{radius}$, $\text{height}$); elsewhere standard variables apply.
@@ -46,10 +44,6 @@ Example: Concrete, specific instance illustrating a definition, theorem, or conc
 
 ---
 
-[Future block](#translation)
-
----
-
 [I Foundations](#part-i-foundations)
 
 [II Algebra](#part-ii-algebra)
@@ -61,6 +55,208 @@ Example: Concrete, specific instance illustrating a definition, theorem, or conc
 [V Discrete Mathematics](#part-v-discrete-mathematics)
 
 [VI Applied Mathematics](#part-vi-applied-mathematics)
+
+---
+
+# Part I Foundations
+
+## Set Theory
+### Basic Concepts
+#### Operations (Unions, Intersections)
+### Relations and Functions
+### Cardinality
+#### Countable and Uncountable Sets
+#### Cantor's Diagonal Argument
+### Axiomatic Set Theory
+#### ZFC Axioms
+
+## Logic
+### Propositional Logic
+### Predicate Logic
+### Proof Systems
+#### Induction
+#### Contradiction
+### Model Theory
+### Computability Theory
+#### Turing Machines
+#### The Halting Problem
+### Gödel's Incompleteness Theorems
+
+# Part II Algebra
+
+## Elementary Algebra
+### Numbers and Operations
+#### Complex Numbers
+##### Euler's Identity
+### Polynomials
+#### Fundamental Theorem of Algebra
+
+## Linear Algebra
+### Vector Spaces
+### Matrices and Determinants
+#### Rank, Nullity, and Trace
+### Linear Transformations
+### Eigenvalues and Eigenvectors
+#### Spectral Theorem
+### Matrix Factorizations
+#### Singular Value Decomposition (SVD)
+
+## Abstract Algebra
+### Groups
+#### Symmetry and Permutation Groups
+#### Group Homomorphisms
+### Rings and Ideals
+### Fields
+### Galois Theory
+### Representation Theory
+### Homological Algebra
+
+## Category Theory
+### Categories, Functors, and Natural Transformations
+### Limits and Colimits
+### Adjunctions
+### Yoneda Lemma
+
+## Number Theory
+### Divisibility
+#### Euclidean Algorithm
+### Primes
+#### Prime Number Theorem
+#### Riemann Hypothesis
+### Modular Arithmetic
+#### Chinese Remainder Theorem
+#### Fermat's Little Theorem
+### Algebraic Number Theory
+### Analytic Number Theory
+### Cryptography
+#### RSA
+#### Elliptic Curves
+
+# Part III Analysis
+
+## Calculus
+### Limits and Continuity
+#### Epsilon-Delta Definition
+### Differential Calculus
+#### Mean Value Theorem
+### Integral Calculus
+#### Fundamental Theorem of Calculus
+### Sequences and Series
+#### Convergence Tests
+#### Taylor and Fourier Series
+
+## Multivariable and Vector Calculus
+### Partial Derivatives
+### Gradients and Directional Derivatives
+### Multiple Integrals
+### Vector Calculus
+#### Divergence, Gradient, and Curl
+#### Stokes', Green's, and Divergence Theorems
+
+## Real Analysis
+### Metric Spaces
+### Topology of R^n
+### Measure Theory
+#### Lebesgue Integration
+#### Lp Spaces
+### Convergence Types (Pointwise vs Uniform)
+
+## Complex Analysis
+### Analyticity
+#### Cauchy-Riemann Equations
+### Cauchy's Integral Formula
+### Residues and Poles
+### Conformal Mapping
+
+## Functional Analysis
+### Hilbert and Banach Spaces
+### Operator Theory
+### Distributions (Generalized Functions)
+
+## Differential Equations
+### Ordinary Differential Equations (ODEs)
+### Partial Differential Equations (PDEs)
+#### Heat, Wave, and Laplace Equations
+### Dynamical Systems
+#### Chaos Theory
+
+# Part IV Geometry
+
+## Classical Geometry
+### Euclidean Geometry
+### Non-Euclidean Geometry
+#### Hyperbolic Geometry
+#### Elliptic Geometry
+
+## Analytic Geometry
+### Coordinate Systems
+### Conic Sections
+
+## Differential Geometry
+### Manifolds
+### Tensors
+### Riemannian Geometry
+#### Curvature (Ricci, Riemann)
+#### Geodesics
+### Symplectic Geometry
+
+## Algebraic Geometry
+### Varieties and Schemes
+### Sheaves and Cohomology
+
+## Topology
+### Point-Set Topology
+#### Compactness and Connectedness
+#### Hausdorff Spaces
+### Algebraic Topology
+#### Fundamental Groups (Homotopy)
+#### Homology and Cohomology
+### Knot Theory
+### Differential Topology
+
+# Part V Discrete Mathematics
+
+## Combinatorics
+### Counting Principles
+### Generating Functions
+### Graph Theory
+#### Paths, Cycles, and Connectivity
+#### Planarity and Coloring
+#### Trees
+### Ramsey Theory
+
+## Discrete Structures
+### Posets and Lattices
+### Complexity Theory
+#### P vs NP
+
+# Part VI Applied Mathematics
+
+## Probability and Statistics
+### Probability Theory
+#### Law of Large Numbers
+#### Central Limit Theorem
+### Statistics
+#### Hypothesis Testing
+#### Regression Analysis
+### Stochastic Processes
+#### Markov Chains
+#### Brownian Motion
+
+## Information Theory
+### Shannon Entropy
+### Coding Theory
+
+## Numerical Analysis
+### Root Finding
+### Numerical Integration/Differentiation
+### Monte Carlo Methods
+
+## Optimization
+### Linear Programming
+### Convex Optimization
+### Game Theory
+#### Nash Equilibrium
 
 ---
 
@@ -545,17 +741,8 @@ $$
 $$
 
 ---
----
----
----
----
----
----
----
----
----
 
-## Symbols
+# Appendix
 
 $$
 \begin{aligned}
@@ -658,23 +845,7 @@ $$
 
 ## Prime numbers
 
-| # | Prime |
-|---|------|
-|  | 2 |
-|  | 3 |
-|  | 5 |
-|  | 7 |
-|  | 11 |
-|  | 13 |
-|  | 17 |
-|  | 19 |
-|  | 23 |
-|  | 29 |
-|  | 31 |
-| | 37 |
-|  | 41 |
-| | 43 |
-| | 47 |
+First under fifth: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47
 
 ## Line Equations
 
@@ -774,203 +945,3 @@ $$
 $$
 (a, b, c) \in (\mathbb{R}^+)^3 \iff a \in \mathbb{R}^+,\ b \in \mathbb{R}^+,\ c \in \mathbb{R}^+
 $$
-
-# Part I Foundations
-
-## Set Theory
-### Basic Concepts
-#### Operations (Unions, Intersections)
-### Relations and Functions
-### Cardinality
-#### Countable and Uncountable Sets
-#### Cantor's Diagonal Argument
-### Axiomatic Set Theory
-#### ZFC Axioms
-
-## Logic
-### Propositional Logic
-### Predicate Logic
-### Proof Systems
-#### Induction
-#### Contradiction
-### Model Theory
-### Computability Theory
-#### Turing Machines
-#### The Halting Problem
-### Gödel's Incompleteness Theorems
-
-# Part II Algebra
-
-## Elementary Algebra
-### Numbers and Operations
-#### Complex Numbers
-##### Euler's Identity
-### Polynomials
-#### Fundamental Theorem of Algebra
-
-## Linear Algebra
-### Vector Spaces
-### Matrices and Determinants
-#### Rank, Nullity, and Trace
-### Linear Transformations
-### Eigenvalues and Eigenvectors
-#### Spectral Theorem
-### Matrix Factorizations
-#### Singular Value Decomposition (SVD)
-
-## Abstract Algebra
-### Groups
-#### Symmetry and Permutation Groups
-#### Group Homomorphisms
-### Rings and Ideals
-### Fields
-### Galois Theory
-### Representation Theory
-### Homological Algebra
-
-## Category Theory
-### Categories, Functors, and Natural Transformations
-### Limits and Colimits
-### Adjunctions
-### Yoneda Lemma
-
-## Number Theory
-### Divisibility
-#### Euclidean Algorithm
-### Primes
-#### Prime Number Theorem
-#### Riemann Hypothesis
-### Modular Arithmetic
-#### Chinese Remainder Theorem
-#### Fermat's Little Theorem
-### Algebraic Number Theory
-### Analytic Number Theory
-### Cryptography
-#### RSA
-#### Elliptic Curves
-
-# Part III Analysis
-
-## Calculus
-### Limits and Continuity
-#### Epsilon-Delta Definition
-### Differential Calculus
-#### Mean Value Theorem
-### Integral Calculus
-#### Fundamental Theorem of Calculus
-### Sequences and Series
-#### Convergence Tests
-#### Taylor and Fourier Series
-
-## Multivariable and Vector Calculus
-### Partial Derivatives
-### Gradients and Directional Derivatives
-### Multiple Integrals
-### Vector Calculus
-#### Divergence, Gradient, and Curl
-#### Stokes', Green's, and Divergence Theorems
-
-## Real Analysis
-### Metric Spaces
-### Topology of R^n
-### Measure Theory
-#### Lebesgue Integration
-#### Lp Spaces
-### Convergence Types (Pointwise vs Uniform)
-
-## Complex Analysis
-### Analyticity
-#### Cauchy-Riemann Equations
-### Cauchy's Integral Formula
-### Residues and Poles
-### Conformal Mapping
-
-## Functional Analysis
-### Hilbert and Banach Spaces
-### Operator Theory
-### Distributions (Generalized Functions)
-
-## Differential Equations
-### Ordinary Differential Equations (ODEs)
-### Partial Differential Equations (PDEs)
-#### Heat, Wave, and Laplace Equations
-### Dynamical Systems
-#### Chaos Theory
-
-# Part IV Geometry
-
-## Classical Geometry
-### Euclidean Geometry
-### Non-Euclidean Geometry
-#### Hyperbolic Geometry
-#### Elliptic Geometry
-
-## Analytic Geometry
-### Coordinate Systems
-### Conic Sections
-
-## Differential Geometry
-### Manifolds
-### Tensors
-### Riemannian Geometry
-#### Curvature (Ricci, Riemann)
-#### Geodesics
-### Symplectic Geometry
-
-## Algebraic Geometry
-### Varieties and Schemes
-### Sheaves and Cohomology
-
-## Topology
-### Point-Set Topology
-#### Compactness and Connectedness
-#### Hausdorff Spaces
-### Algebraic Topology
-#### Fundamental Groups (Homotopy)
-#### Homology and Cohomology
-### Knot Theory
-### Differential Topology
-
-# Part V Discrete Mathematics
-
-## Combinatorics
-### Counting Principles
-### Generating Functions
-### Graph Theory
-#### Paths, Cycles, and Connectivity
-#### Planarity and Coloring
-#### Trees
-### Ramsey Theory
-
-## Discrete Structures
-### Posets and Lattices
-### Complexity Theory
-#### P vs NP
-
-# Part VI Applied Mathematics
-
-## Probability and Statistics
-### Probability Theory
-#### Law of Large Numbers
-#### Central Limit Theorem
-### Statistics
-#### Hypothesis Testing
-#### Regression Analysis
-### Stochastic Processes
-#### Markov Chains
-#### Brownian Motion
-
-## Information Theory
-### Shannon Entropy
-### Coding Theory
-
-## Numerical Analysis
-### Root Finding
-### Numerical Integration/Differentiation
-### Monte Carlo Methods
-
-## Optimization
-### Linear Programming
-### Convex Optimization
-### Game Theory
-#### Nash Equilibrium
