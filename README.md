@@ -40,7 +40,7 @@ Example: Concrete, specific instance illustrating a definition, theorem, or conc
 
 <!-- Use semantic LaTeX commands (e.g. \lt) instead of literal or Unicode symbols -->
 
-<!-- Use spaces around `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, etc; Space after commas; `\quad` for spacing -->
+<!-- Use spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ","; use `\quad` and `\` for rendering spaces -->
 
 ---
 
@@ -260,6 +260,7 @@ Example: Concrete, specific instance illustrating a definition, theorem, or conc
 
 ---
 
+$$
 ## Triangle
 
 **Definition** (geometric).
@@ -849,13 +850,19 @@ $$
 **Notation.**
 
 $$
-\log_\text{base}\text{(anti-logarithm)} = \text{logarithm}
+\log_\text{base}(\text{anti-logarithm}) = \text{logarithm}
 $$
 
 **Definition.**
 
 $$
 \log_b x = y \iff b^y = x, \quad b \in \mathbb{R}^+, \quad b \neq 1, \quad x \in \mathbb{R}^+
+$$
+
+**Definition** (natural logarithm).
+
+$$
+\ln x = \int_{1}^{x} \frac{1}{t} \, dt, \quad x > 0
 $$
 
 **Notation.**
@@ -866,6 +873,24 @@ $$
 
 $$
 \log x = \log_{10} x
+$$
+
+**Proposition** (exponential–logarithm inverses).
+
+$$
+b^{\log_b x} = x
+$$
+
+$$
+\log_b b^x = x
+$$
+
+$$
+e^{\ln x} = x, \quad x > 0
+$$
+
+$$
+\ln(e^x) = x
 $$
 
 **Proposition.**
@@ -883,6 +908,12 @@ $$
 $$
 
 $$
+c \log_b x + d \log_b y = \log_b(x^c y^d)
+$$
+
+**Corollary.**
+
+$$
 \log_b b = 1
 $$
 
@@ -891,11 +922,11 @@ $$
 $$
 
 $$
-\log_b b^x = x
+\log_b\left(\sqrt[y]{x}\right) = \frac{\log_b x}{y}
 $$
 
 $$
-b^{\log_b x} = x
+\ln(a \times 10^n) = \ln a + n \ln 10
 $$
 
 **Theorem** (change of base).
@@ -904,14 +935,52 @@ $$
 \log_b x = \frac{\log_k x}{\log_k b}, \quad k \in \mathbb{R}^+, \quad k \neq 1
 $$
 
+**Proposition** (symmetry).
+
+$$
+x^{\log_b y} = y^{\log_ x}
+$$
+
+**Proposition** (iterated logarithm).
+
+$$
+\log \left(\log(c^d)\right) = \log(\log c) + \log d
+$$
+
+$$
+\log \left(\log \left(\sqrt[d]{c}\right)\right) = \log(\log c) - \log d
+$$
+
+**Proposition** (sum and difference expansion).
+
+$$
+\log_b(a + c) = \log_b a + \log_b \left(1 + \frac{c}{a}\right)
+$$
+
+$$
+\log_b(a - c) = \log_b a + \log_b \left(1 - \frac{c}{a}\right)
+$$
+
 **Proposition** (inequalities).
 
 $$
-\log_b x < \log_b y \iff x < y, \quad b > 1
+\log_b x \lt \log_b y \iff x \lt y, \quad b \gt 1
 $$
 
 $$
-\log_b x < \log_b y \iff x > y, \quad 0 < b < 1
+\log_b x \lt \log_b y \iff x \gt y, \quad 0 \lt b \lt 1
+$$
+
+**Proposition** (exotic identity).
+
+$$
+x^{\frac{\log(\log x)}{\log x}} = \log x
+$$
+
+**Proposition** (integral).
+
+$$
+\int \log_a x \, dx = x(\log_a x - \log_a e) + C
 $$
 
 ## Limit
