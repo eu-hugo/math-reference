@@ -260,7 +260,6 @@ Example: Concrete, specific instance illustrating a definition, theorem, or conc
 
 ---
 
-$$
 ## Triangle
 
 **Definition** (geometric).
