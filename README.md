@@ -4,7 +4,7 @@
 
 **Notation.** Formula parameters are written as named quantities (e.g. $\text{radius}$, $\text{height}$); elsewhere standard variables apply.
 
-<!--Meta: I don't know what this is, I guess it needs to be infered from how it looks. Is this a personal CRC handbook with genuine mathematical rigor and a consistent house style? A place that holds everything that I've got in touch with in a form that makes sense to me, not scattered across different textbooks with different notations and different levels of rigor? -->
+<!--Meta: I don't know what this is, I guess it needs to be infered from what it contains and how it looks. I guess it's a kind of a personal CRC handbook with genuine mathematical rigor and a consistent house style; A place that holds everything that I've got in touch with and have anxiety about loosing it -->
 
 <!-- Editorial labels
 
