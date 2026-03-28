@@ -1,5 +1,7 @@
 A personal notebook of essential results.
 
+---
+
 **Convention.** Each formula is a canonical representative of its equivalence class.
 
 **Notation.** Formula parameters are written as named quantities (e.g. $\text{radius}$, $\text{height}$); elsewhere standard variables apply.
@@ -990,64 +992,173 @@ $$
 \lim_{x \to a} f(x) = L \iff \forall \epsilon > 0 \exists \delta > 0 \forall x \in \mathbb{R}, \big(a-\delta < x < a + \delta, x \neq a \implies L-\epsilon < f(x) < L+\epsilon\big)
 $$
 
-**Propoistion** (limits).
+## Matrices
+
+## Vector Field Theory
+
+## Derivatives
+
+**Definition** (derivative at a point).
 
 $$
-\lim_{x\to 0}\frac{\sin x}{x}=1
+f'(a) \coloneqq \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}, \quad f : \mathbb{R} \to \mathbb{R}, \quad a \in \mathbb{R}
 $$
 
-$$
-\lim_{x\to 0}\frac{1-\cos x}{x}=0
-$$
+**Definition** (derivative as a function).
 
 $$
-\lim_{x\to 0}\frac{1-\cos x}{x^2}=\frac12
+f'(x) \coloneqq \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
 $$
 
-$$
-\lim_{x\to 0}\frac{\tan x}{x}=1
-$$
+**Notation** (Leibniz).
 
 $$
-\lim_{x\to 0}\frac{e^x-1}{x}=1
+\frac{dy}{dx} \coloneqq \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}, \quad y = f(x)
 $$
 
-$$
-\lim_{x\to 0}\frac{\ln(1+x)}{x}=1
-$$
+## Integrals
+
+**Definition** (Riemann sum).
 
 $$
-\lim_{x\to 0}(1+x)^{1/x}=e
+S_n \mathrel{:=} \sum_{i=1}^{n} f(x_i^{\ast}) \, \Delta x_i, \quad x_i^{\ast} \in [x_{i-1}, x_i], \quad a = x_0 \lt \cdots \lt x_n = b
 $$
 
-$$
-\lim_{n\to\infty}\left(1+\frac1n\right)^n=e
-$$
+**Definition** (Riemann integral).
 
 $$
-\lim_{x\to\infty}\left(1+\frac{a}{x}\right)^x=e^{a}
-\quad (a\in\mathbb{R})
+\int_{a}^{b} f(x) \, dx \coloneqq \lim_{\max \Delta x_i \to 0} \sum_{i=1}^{n} f(x_i^*) \, \Delta x_i
 $$
 
+**Notation** (uniform partition).
+
 $$
-\lim_{x\to 0}\frac{a^x-1}{x}=\ln a
-\quad (a>0)
+\int_{a}^{b} f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f\left(a + i \cdot \frac{b-a}{n}\right) \frac{b-a}{n}
+$$
+
+**Definition** (antiderivative).
+
+$$
+F'(x) = f(x) \quad \forall x \in I
+$$
+
+**Definition** (indefinite integral).
+
+$$
+\int f(x) \, dx \coloneqq F(x) + C, \quad C \in \mathbb{R}
+$$
+
+**Theorem** (Fundamental Theorem of Calculus, Part I).
+
+$$
+F(x) \coloneqq \int_{a}^{x} f(t) \, dt \implies F'(x) = f(x)
+$$
+
+**Theorem** (Fundamental Theorem of Calculus, Part II).
+
+$$
+\int_{a}^{b} f(x) \, dx = F(b) - F(a)
 $$
 
 ## Derivatives
 
 **Definition** (differentiability at a point).
 
+Let $f : \mathbb{R} \to \mathbb{R}$ be a function and $a \in \mathbb{R}$. The derivative of $f$ at $a$ is defined as the limit
+
 $$
 f'(a) \coloneqq \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
 $$
 
+provided the limit exists, in which case $f$ is said to be **differentiable** at $a$.
+
+**Definition** (derivative as a function).
+
+If $f$ is differentiable at every point in its domain, the derivative of $f$ is the function $f' : \mathbb{R} \to \mathbb{R}$ defined by
+
+$$
+f'(x) \coloneqq \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
+$$
+
+**Notation** (Leibniz).
+
+Let $y = f(x)$. The derivative of $y$ with respect to $x$ is written
+
+$$
+\frac{dy}{dx} \coloneqq \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}
+$$
+
+The two notations are related by $f'(x) = \dfrac{dy}{dx}$.
+
 ## Integrals
 
-## Matrices
+**Definition** (Riemann integral).
 
-## Vector Field Theory
+Let $f : [a, b] \to \mathbb{R}$ be a bounded function. Partition $[a, b]$ into $n$ subintervals by choosing points
 
----
+$$
+a = x_0 \lt x_1 \lt \cdots \lt x_n = b
+$$
+
+and let $\Delta x_i = x_i - x_{i-1}$ and $x_i^* \in [x_{i-1}, x_i]$ be any sample point. The **Riemann sum** is
+
+$$
+S_n \coloneqq \sum_{i=1}^{n} f(x_i^*) \, \Delta x_i
+$$
+
+If the limit of $S_n$ exists as $\max \Delta x_i \to 0$, independent of the choice of partition and sample points, then $f$ is **Riemann integrable** on $[a, b]$ and its **definite integral** is
+
+$$
+\int_{a}^{b} f(x) \, dx \coloneqq \lim_{\max \Delta x_i \to 0} \sum_{i=1}^{n} f(x_i^*) \, \Delta x_i
+$$
+
+**Notation** (uniform partition).
+
+When all subintervals are equal, $\Delta x_i = \dfrac{b - a}{n}$ and $x_i^* = x_i = a + i \, \Delta x$, so
+
+$$
+\int_{a}^{b} f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f\!\left(a + i \cdot \frac{b-a}{n}\right) \frac{b - a}{n}
+$$
+
+**Definition** (antiderivative).
+
+A function $F : \mathbb{R} \to \mathbb{R}$ is an **antiderivative** of $f$ on an interval $I$ if
+
+$$
+F'(x) = f(x) \quad \forall x \in I
+$$
+
+**Definition** (indefinite integral).
+
+The **indefinite integral** of $f$ is the family of all antiderivatives of $f$, written
+
+$$
+\int f(x) \, dx \coloneqq F(x) + C, \quad C \in \mathbb{R}
+$$
+
+where $F$ is any particular antiderivative of $f$ and $C$ is the **constant of integration**.
+
+**Theorem** (Fundamental Theorem of Calculus).
+
+Let $f$ be continuous on $[a, b]$.
+
+Part I: the function $F : [a, b] \to \mathbb{R}$ defined by
+
+$$
+F(x) \coloneqq \int_{a}^{x} f(t) \, dt
+$$
+
+is differentiable on $(a, b)$ and $F'(x) = f(x)$.
+
+Part II: if $F$ is any antiderivative of $f$ on $[a, b]$, then
+
+$$
+\int_{a}^{b} f(x) \, dx = F(b) - F(a)
+$$
 
 # Appendix
+
+# References
+
+- Gradshteyn, I. S., & Ryzhik, I. M. (2014). *Table of Integrals, Series, and Products* (8th ed.). Academic Press.
+- Zwillinger, D. (Ed.). (2018). *CRC Standard Mathematical Tables and Formulas* (33rd ed.). CRC Press.
