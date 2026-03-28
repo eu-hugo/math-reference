@@ -1,4 +1,4 @@
-(Personal notebook. Under construction...)
+A personal notebook of essential results.
 
 **Convention.** Each formula is a canonical representative of its equivalence class.
 
