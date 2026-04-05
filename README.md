@@ -1,12 +1,10 @@
-A personal notebook of results.
+A personal notebook of mathematics.
 
 ---
 
 **Convention.** Each formula is a canonical representative of its equivalence class.
 
 **Notation.** Formula parameters are written as named quantities (e.g. $\text{radius}$, $\text{height}$); elsewhere standard variables apply.
-
-<!--Meta: I don't know what this is, I guess it needs to be infered from what it contains and how it looks. I guess it's a kind of a personal CRC handbook with genuine mathematical rigor and a consistent house style; A place that holds everything that I've got in touch with and have anxiety about loosing it -->
 
 <!-- Editorial labels
 
@@ -40,9 +38,15 @@ Example: Concrete, specific instance illustrating a definition, theorem, or conc
 
 -->
 
-<!-- Use semantic LaTeX commands (e.g. \lt) instead of literal or Unicode symbols -->
+<!-- Use semantic LaTeX commandsinstead of literal or Unicode symbols 
+\lt
+\ast
+\coloneqq
+etc
+-->
 
-<!-- Use spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ","; use `\quad` and `\` for rendering spaces -->
+<!-- Use spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ","; 
+use `\quad` and `\` for rendering spaces -->
 
 ---
 
@@ -939,7 +943,7 @@ $$
 **Proposition** (symmetry).
 
 $$
-x^{\log_b y} = y^{\log_ x}
+x^{\log_b y} = y^{\log_y x}
 $$
 
 **Proposition** (iterated logarithm).
@@ -984,6 +988,246 @@ $$
 \int \log_a x \, dx = x(\log_a x - \log_a e) + C
 $$
 
+## Polynomial Equations
+
+### Linear Equation
+
+**Notation.**
+
+$$
+\text{coefficient} \cdot x + \text{constant} = 0
+$$
+
+**Definition** (linear equation).
+
+$$
+ax + b = 0, \quad a, b \in \mathbb{R}, \quad a \neq 0
+$$
+
+**Proposition** (root).
+
+$$
+x = -\frac{b}{a}
+$$
+
+**Definition** (slope).
+
+$$
+m = \frac{y_2 - y_1}{x_2 - x_1}, \quad x_1 \neq x_2
+$$
+
+**Definition** (forms).
+
+$$
+ax + b = 0 \quad \text{(standard)}
+$$
+
+$$
+y = mx + c, \quad m, c \in \mathbb{R} \quad \text{(slope-intercept)}
+$$
+
+$$
+y - y_1 = m(x - x_1) \quad \text{(point-slope)}
+$$
+
+$$
+\frac{x}{a} + \frac{y}{b} = 1, \quad a, b \neq 0 \quad \text{(intercept)}
+$$
+
+$$
+ax + by + c = 0, \quad a, b \in \mathbb{R},\ (a, b) \neq (0, 0) \quad \text{(general)}
+$$
+
+**Proposition** (parallel and perpendicular lines).
+
+$$
+m_1 = m_2 \iff \text{lines are parallel}
+$$
+
+$$
+m_1 \cdot m_2 = -1 \iff \text{lines are perpendicular}
+$$
+
+### Quadratic Equation
+
+**Notation.**
+
+$$
+\text{coefficient} \cdot x^2 + \text{coefficient} \cdot x + \text{constant} = 0
+$$
+
+**Definition** (quadratic equation).
+
+$$
+ax^2 + bx + c = 0, \quad a, b, c \in \mathbb{R}, \quad a \neq 0
+$$
+
+**Definition** (discriminant).
+
+$$
+\Delta \coloneqq b^2 - 4ac
+$$
+
+**Definition** (vertex).
+
+$$
+(h, k) \coloneqq \left(-\frac{b}{2a}, c - \frac{b^2}{4a}\right) = \left(-\frac{b}{2a}, -\frac{\Delta}{4a}\right)
+$$
+
+**Remark**. The vertex $(h, k)$ is the maximum of the parabola if $a \lt 0$ and the minimum if $a \gt 0$. The axis of symmetry is $x = h$.
+
+**Definition** (forms).
+
+$$
+ax^2 + bx + c = 0 \quad \text{(standard)}
+$$
+
+$$
+a(x - h)^2 + k = 0 \quad \text{(vertex)}
+$$
+
+$$
+a(x - x_1)(x - x_2) = 0 \quad \text{(factored)}
+$$
+
+**Theorem** (quadratic formula).
+
+$$
+x = \frac{-b \pm \sqrt{\Delta}}{2a}
+$$
+
+**Remark**. Also know as Bhaskara's formula.
+
+**Corollary** (rationalized form).
+
+$$
+x = \frac{2c}{-b \mp \sqrt{\Delta}}
+$$
+
+**Theorem** (nature of roots).
+
+$$
+\Delta > 0 \implies \text{two distinct real roots}
+$$
+
+$$
+\Delta = 0 \implies \text{one repeated real root}
+$$
+
+$$
+\Delta < 0 \implies \text{two complex conjugate roots}
+$$
+
+**Corollary** (repeated root).
+
+$$
+\Delta = 0 \implies x = -\frac{b}{2a}
+$$
+
+**Proposition** (Vieta's formulas).
+
+$$
+x_1, x_2 \text{ roots of } ax^2 + bx + c = 0 \implies x_1 + x_2 = -\frac{b}{a}, \quad x_1 \cdot x_2 = \frac{c}{a}
+$$
+
+**Corollary** (factored form).
+
+$$
+ax^2 + bx + c = a(x - x_1)(x - x_2)
+$$
+
+**Proposition** (completing the square).
+
+$$
+ax^2 + bx + c = a\left(x + \frac{b}{2a}\right)^2 - \frac{\Delta}{4a}
+$$
+
+**Proposition** (root identities).
+
+$$
+(x_1 - x_2)^2 = \frac{\Delta}{a^2}
+$$
+
+$$
+x_1^2 + x_2^2 = \frac{b^2 - 2ac}{a^2}
+$$
+
+### Cubic Equation
+
+**Definition** (cubic equation).
+
+$$
+ax^3 + bx^2 + cx + d = 0, \quad a, b, c, d \in \mathbb{R}, \quad a \neq 0
+$$
+
+**Definition** (depressed cubic).
+
+The substitution $x = t - \dfrac{b}{3a}$ eliminates the quadratic term, yielding
+
+$$
+t^3 + pt + q = 0
+$$
+
+where
+
+$$
+p = \frac{3ac - b^2}{3a^2}, \quad q = \frac{2b^3 - 9abc + 27a^2 d}{27a^3}
+$$
+
+**Definition** (discriminant).
+
+$$
+\Delta \coloneqq 18abcd - 4b^3d + b^2c^2 - 4ac^3 - 27a^2d^2
+$$
+
+**Theorem** (nature of roots).
+
+$$
+\Delta > 0 \implies \text{three distinct real roots}
+$$
+
+$$
+\Delta = 0 \implies \text{repeated root (at least two roots coincide)}
+$$
+
+$$
+\Delta < 0 \implies \text{one real root and two complex conjugate roots}
+$$
+
+**Theorem** (Cardano's formula).
+
+Let $t^3 + pt + q = 0$. Define
+
+$$
+D \coloneqq \left(\frac{q}{2}\right)^2 + \left(\frac{p}{3}\right)^3
+$$
+
+Then one real root is
+
+$$
+t = \sqrt[3]{-\frac{q}{2} + \sqrt{D}} + \sqrt[3]{-\frac{q}{2} - \sqrt{D}}
+$$
+
+and the full solution to $ax^3 + bx^2 + cx + d = 0$ is recovered via $x = t - \dfrac{b}{3a}$.
+
+**Proposition** (Vieta's formulas).
+
+Let $x_1, x_2, x_3$ be the roots of $ax^3 + bx^2 + cx + d = 0$. Then
+
+$$
+x_1 + x_2 + x_3 = -\frac{b}{a}
+$$
+
+$$
+x_1 x_2 + x_1 x_3 + x_2 x_3 = \frac{c}{a}
+$$
+
+$$
+x_1 x_2 x_3 = -\frac{d}{a}
+$$
+
+**Remark.** Cardano's formula was published in 1545 in *Ars Magna* by Gerolamo Cardano, though the method was originally discovered by Scipione del Ferro and Niccolò Tartaglia. The quartic was solved shortly after by Lodovico Ferrari; Abel and Ruffini later proved no general algebraic solution exists for degree $\geq 5$.
+
 ## Limit
 
 **Definition** ($\epsilon - \delta$ definition).
@@ -991,10 +1235,6 @@ $$
 $$
 \lim_{x \to a} f(x) = L \iff \forall \epsilon > 0 \exists \delta > 0 \forall x \in \mathbb{R}, \big(a-\delta < x < a + \delta, x \neq a \implies L-\epsilon < f(x) < L+\epsilon\big)
 $$
-
-## Matrices
-
-## Vector Field Theory
 
 ## Derivatives
 
@@ -1021,19 +1261,19 @@ $$
 **Definition** (Riemann sum).
 
 $$
-S_n \mathrel{:=} \sum_{i=1}^{n} f(x_i^{\ast}) \, \Delta x_i, \quad x_i^{\ast} \in [x_{i-1}, x_i], \quad a = x_0 \lt \cdots \lt x_n = b
+S_n \coloneqq; \sum_{i=1}^{n} f(x_i^{\ast}) \Delta x_i, \quad x_i^{\ast} \in [x_{i-1}, x_i], \quad a = x_0 \lt \cdots \lt x_n = b
 $$
 
 **Definition** (Riemann integral).
 
 $$
-\int_{a}^{b} f(x) \, dx \coloneqq \lim_{\max \Delta x_i \to 0} \sum_{i=1}^{n} f(x_i^*) \, \Delta x_i
+\int_{a}^{b} f(x) \ dx \coloneqq \lim_{\max \Delta x_i \to 0} \sum_{i=1}^{n} f(x_i^\ast) \Delta x_i
 $$
 
 **Notation** (uniform partition).
 
 $$
-\int_{a}^{b} f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f\left(a + i \cdot \frac{b-a}{n}\right) \frac{b-a}{n}
+\int_{a}^{b} f(x) \ dx = \lim_{n \to \infty} \sum_{i=1}^{n} f\left(a + i \cdot \frac{b-a}{n}\right) \frac{b-a}{n}
 $$
 
 **Definition** (antiderivative).
@@ -1045,20 +1285,24 @@ $$
 **Definition** (indefinite integral).
 
 $$
-\int f(x) \, dx \coloneqq F(x) + C, \quad C \in \mathbb{R}
+\int f(x) \ dx \coloneqq F(x) + C, \quad C \in \mathbb{R}
 $$
 
 **Theorem** (Fundamental Theorem of Calculus, Part I).
 
 $$
-F(x) \coloneqq \int_{a}^{x} f(t) \, dt \implies F'(x) = f(x)
+F(x) \coloneqq \int_{a}^{x} f(t) \ dt \implies F'(x) = f(x)
 $$
 
 **Theorem** (Fundamental Theorem of Calculus, Part II).
 
 $$
-\int_{a}^{b} f(x) \, dx = F(b) - F(a)
+\int_{a}^{b} f(x) \ dx = F(b) - F(a)
 $$
+
+## Matrices
+
+## Vector Field Theory
 
 ## Derivatives
 
@@ -1117,7 +1361,7 @@ $$
 When all subintervals are equal, $\Delta x_i = \dfrac{b - a}{n}$ and $x_i^* = x_i = a + i \, \Delta x$, so
 
 $$
-\int_{a}^{b} f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f\!\left(a + i \cdot \frac{b-a}{n}\right) \frac{b - a}{n}
+\int_{a}^{b} f(x) \ dx = \lim_{n \to \infty} \sum_{i=1}^{n} f \left(a + i \cdot \frac{b-a}{n}\right) \frac{b - a}{n}
 $$
 
 **Definition** (antiderivative).
