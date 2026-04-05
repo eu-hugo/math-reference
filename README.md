@@ -1,4 +1,4 @@
-A personal notebook of results. 
+A personal notebook. 
 
 (under construction...)
 
@@ -1070,13 +1070,25 @@ $$
 \Delta \coloneqq b^2 - 4ac
 $$
 
+**Theorem** (nature of roots).
+
+$$
+\Delta > 0 \iff \text{two distinct real roots}
+$$
+
+$$
+\Delta = 0 \iff \text{one repeated real root}
+$$
+
+$$
+\Delta < 0 \iff \text{two complex conjugate roots}
+$$
+
 **Definition** (vertex).
 
 $$
 (h, k) \coloneqq \left(-\frac{b}{2a}, c - \frac{b^2}{4a}\right) = \left(-\frac{b}{2a}, -\frac{\Delta}{4a}\right)
 $$
-
-**Remark**. The vertex $(h, k)$ is the maximum of the parabola if $a \lt 0$ and the minimum if $a \gt 0$. The axis of symmetry is $x = h$.
 
 **Definition** (forms).
 
@@ -1092,6 +1104,10 @@ $$
 a(x - x_1)(x - x_2) = 0 \quad \text{(factored)}
 $$
 
+**Remark**. The vertex $(h, k)$ is the maximum of the parabola if $a \lt 0$ and the minimum if $a \gt 0$. The axis of symmetry is $x = h$.
+
+axis of symetry as middle point of two roots #todo
+
 **Theorem** (quadratic formula).
 
 $$
@@ -1104,20 +1120,6 @@ $$
 
 $$
 x = \frac{2c}{-b \mp \sqrt{\Delta}}
-$$
-
-**Theorem** (nature of roots).
-
-$$
-\Delta > 0 \implies \text{two distinct real roots}
-$$
-
-$$
-\Delta = 0 \implies \text{one repeated real root}
-$$
-
-$$
-\Delta < 0 \implies \text{two complex conjugate roots}
 $$
 
 **Corollary** (repeated root).
