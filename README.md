@@ -268,7 +268,7 @@ use `\quad` and `\` for rendering spaces -->
 
 ---
 
-## Functions
+## Function
 
 **Definition** (function).
 
@@ -1446,7 +1446,7 @@ $$
 \lim_{x \to a} f(x) = L \iff \forall \epsilon > 0 \exists \delta > 0 \forall x \in \mathbb{R}, \big(a-\delta < x < a + \delta, x \neq a \implies L-\epsilon < f(x) < L+\epsilon\big)
 $$
 
-## Derivatives
+## Derivative
 
 **Definition** (derivative at a point).
 
@@ -1466,7 +1466,7 @@ $$
 \frac{dy}{dx} \coloneqq \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}, \quad y = f(x)
 $$
 
-## Integrals
+## Integral
 
 **Definition** (Riemann sum).
 
@@ -1510,7 +1510,7 @@ $$
 \int_{a}^{b} f(x) \ dx = F(b) - F(a)
 $$
 
-## Matrices
+## Matrice
 
 ## Vector Field Theory
 
