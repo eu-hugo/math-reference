@@ -1,4 +1,4 @@
-A personal notebook of mathematics.
+A personal notebook of selected results.
 
 ---
 
