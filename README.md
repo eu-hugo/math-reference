@@ -1,4 +1,4 @@
-A personal notebook of essential results.
+A personal notebook of selected results.
 
 ---
 
