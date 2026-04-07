@@ -1584,3 +1584,4 @@ $$
 
 - Gradshteyn, I. S., & Ryzhik, I. M. (2014). *Table of Integrals, Series, and Products* (8th ed.). Academic Press.
 - Zwillinger, D. (Ed.). (2018). *CRC Standard Mathematical Tables and Formulas* (33rd ed.). CRC Press.
+- Gowers, T. (Ed.). (2008). The Princeton Companion to Mathematics. Princeton University Press.
