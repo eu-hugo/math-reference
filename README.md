@@ -5,43 +5,31 @@
 <!-- Editorial labels
 
 Axiom / Postulate: Fundamental assumed truth; the unproven foundation of a system.
-
 Definition: Precise statement establishing the exact meaning of a concept.
-
 Theorem: Major, highly significant mathematical statement that has been proven.
-
 Proposition: Important, useful, standalone proven fact, lesser in scope than a theorem.
-
 Lemma: Helper result proven primarily to step toward a larger theorem.
-
 Corollary: Direct, immediate consequence of a preceding theorem or proposition.
-
 Property: Inherent, easily derived characteristic of a formally defined mathematical object.
-
 Claim: Localized, minor assertion often used internally within a larger proof.
-
 Proof: Rigorous logical deduction establishing the truth of a Theorem, Proposition, Lemma, or Claim.
-
 Conjecture: Educated guess believed true but currently lacking rigorous proof.
-
 Convention: Agreed-upon rule chosen to resolve ambiguity among valid options.
-
 Notation: Explicit assignment of symbols or shorthand to represent mathematical concepts.
-
 Remark: Extra context, historical note, useful perspective or subtle observation for the reader.
-
 Example: Concrete, specific instance illustrating a definition, theorem, or concept.
 
 -->
 
-<!-- Use semantic LaTeX commandsinstead of literal or Unicode symbols 
+<!-- Using semantic LaTeX commands instead of literal / Unicode symbols 
 \lt
 \ast
 \coloneqq
+\lbrace \rbrace
 etc
 -->
 
-<!-- Use spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ","; 
+<!-- spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ",", etc;
 use `\quad` and `\` for rendering spaces -->
 
 ---
@@ -61,206 +49,488 @@ use `\quad` and `\` for rendering spaces -->
 ---
 
 # Part I Foundations
-
 ## Set Theory
 ### Basic Concepts
-#### Operations (Unions, Intersections)
+#### Operations (Unions, Intersections, Complements)
+#### Power Sets
+#### Cartesian Products
 ### Relations and Functions
+#### Equivalence Relations
+#### Order Relations
+#### Injections, Surjections, Bijections
 ### Cardinality
 #### Countable and Uncountable Sets
 #### Cantor's Diagonal Argument
+#### Continuum Hypothesis
 ### Axiomatic Set Theory
 #### ZFC Axioms
+#### Axiom of Choice and Equivalents
+#### Zorn's Lemma
 
 ## Logic
 ### Propositional Logic
+#### Truth Tables and Logical Connectives
+#### Tautologies and Contradictions
 ### Predicate Logic
+#### Quantifiers
+#### First-Order Theories
 ### Proof Systems
-#### Induction
-#### Contradiction
+#### Natural Deduction
+#### Induction (Ordinary, Strong, Transfinite)
+#### Contradiction and Contrapositive
 ### Model Theory
+#### Completeness and Compactness Theorems
+#### Löwenheim-Skolem Theorems
 ### Computability Theory
 #### Turing Machines
 #### The Halting Problem
+#### Recursive Functions
 ### Gödel's Incompleteness Theorems
 
 # Part II Algebra
-
 ## Elementary Algebra
 ### Numbers and Operations
-#### Complex Numbers
-##### Euler's Identity
+#### Natural, Integer, Rational, Real, Complex Numbers
+#### Properties of Exponents and Radicals
+### Complex Numbers
+#### Euler's Identity and De Moivre's Theorem
+#### Roots of Unity
 ### Polynomials
+#### Factorization and Roots
 #### Fundamental Theorem of Algebra
+#### Vieta's Formulas
+### Inequalities
+#### AM-GM-HM Inequality
+#### Cauchy-Schwarz, Hölder, and Minkowski Inequalities
 
 ## Linear Algebra
 ### Vector Spaces
+#### Basis and Dimension
+#### Subspaces and Quotient Spaces
 ### Matrices and Determinants
-#### Rank, Nullity, and Trace
+#### Rank, Nullity, Trace, Inverse, and Adjugate
 ### Linear Transformations
+#### Kernel and Image
+#### Change of Basis
 ### Eigenvalues and Eigenvectors
+#### Characteristic Polynomial
+#### Diagonalization and Jordan Canonical Form
 #### Spectral Theorem
+### Inner Product Spaces
+#### Orthogonality and Gram-Schmidt Process
 ### Matrix Factorizations
-#### Singular Value Decomposition (SVD)
+#### LU, QR, Cholesky, and SVD
 
 ## Abstract Algebra
 ### Groups
 #### Symmetry and Permutation Groups
-#### Group Homomorphisms
+#### Subgroups, Cosets, and Lagrange's Theorem
+#### Homomorphisms and Isomorphism Theorems
+#### Sylow Theorems
 ### Rings and Ideals
-### Fields
-### Galois Theory
+#### Integral Domains and Fields of Fractions
+#### Principal Ideal Domains and Unique Factorization Domains
+### Fields and Galois Theory
+#### Field Extensions
+#### Finite Fields
+#### Solvability by Radicals
+### Modules
+#### Free and Projective Modules
+#### Structure Theorem for Finitely Generated Modules over PIDs
 ### Representation Theory
-### Homological Algebra
+#### Characters and Maschke's Theorem
+### Lie Groups and Lie Algebras
 
 ## Category Theory
 ### Categories, Functors, and Natural Transformations
 ### Limits and Colimits
-### Adjunctions
-### Yoneda Lemma
+#### Products, Coproducts, Equalizers, and Coequalizers
+### Adjunctions and Monads
+### Yoneda Lemma and Representable Functors
 
 ## Number Theory
-### Divisibility
-#### Euclidean Algorithm
-### Primes
+### Divisibility and Euclidean Algorithm
+#### Bézout's Identity
+### Primes and Factorization
+#### Fundamental Theorem of Arithmetic
 #### Prime Number Theorem
 #### Riemann Hypothesis
 ### Modular Arithmetic
 #### Chinese Remainder Theorem
-#### Fermat's Little Theorem
-### Algebraic Number Theory
-### Analytic Number Theory
+#### Fermat's Little Theorem, Euler's Totient, and Quadratic Reciprocity
+### Diophantine Equations
+#### Linear, Pell's Equation, and Fermat's Last Theorem
+### Algebraic and Analytic Number Theory
+#### Number Fields, Class Groups, and Dirichlet Series
 ### Cryptography
-#### RSA
-#### Elliptic Curves
+#### RSA, Diffie-Hellman, and Elliptic Curve Cryptography
 
 # Part III Analysis
-
 ## Calculus
 ### Limits and Continuity
-#### Epsilon-Delta Definition
+#### Epsilon-Delta Definition and Intermediate Value Theorem
 ### Differential Calculus
-#### Mean Value Theorem
+#### Rules of Differentiation, Mean Value Theorem, Taylor's Theorem
+#### L'Hôpital's Rule
 ### Integral Calculus
-#### Fundamental Theorem of Calculus
+#### Riemann Integral and Fundamental Theorem of Calculus
+#### Techniques of Integration and Improper Integrals
 ### Sequences and Series
-#### Convergence Tests
-#### Taylor and Fourier Series
+#### Convergence Tests and Taylor/Maclaurin Series
+
+## Trigonometry
+### Trigonometric Functions and Inverse Functions
+### Trigonometric Identities and Equations
+#### Pythagorean, Sum/Difference, Double-Angle, and Half-Angle Formulas
+### Spherical Trigonometry
 
 ## Multivariable and Vector Calculus
-### Partial Derivatives
-### Gradients and Directional Derivatives
-### Multiple Integrals
+### Partial Derivatives, Chain Rule, and Implicit Function Theorem
+### Gradients, Directional Derivatives, and Lagrange Multipliers
+### Multiple Integrals and Change of Variables
 ### Vector Calculus
-#### Divergence, Gradient, and Curl
+#### Divergence, Gradient, Curl, and Helmholtz Decomposition
 #### Stokes', Green's, and Divergence Theorems
 
 ## Real Analysis
-### Metric Spaces
-### Topology of R^n
-### Measure Theory
-#### Lebesgue Integration
-#### Lp Spaces
-### Convergence Types (Pointwise vs Uniform)
+### Metric Spaces and Completeness
+### Topology of ℝⁿ
+#### Heine-Borel Theorem, Compactness, and Connectedness
+### Measure Theory and Lebesgue Integration
+#### Lp Spaces and Convergence Theorems
+### Baire Category Theorem
 
 ## Complex Analysis
-### Analyticity
-#### Cauchy-Riemann Equations
-### Cauchy's Integral Formula
+### Analytic Functions and Cauchy-Riemann Equations
+### Cauchy's Integral Theorem and Formula
+### Series Representations (Taylor and Laurent)
 ### Residues and Poles
-### Conformal Mapping
+#### Residue Theorem
+### Conformal Mapping and Analytic Continuation
+
+## Special Functions and Integral Transforms
+### Gamma, Beta, and Zeta Functions
+### Orthogonal Polynomials and Bessel Functions
+### Fourier, Laplace, and Wavelet Transforms
 
 ## Functional Analysis
-### Hilbert and Banach Spaces
-### Operator Theory
-### Distributions (Generalized Functions)
+### Banach and Hilbert Spaces
+### Operator Theory and Spectral Theorem
+### Distributions and Sobolev Spaces
 
 ## Differential Equations
-### Ordinary Differential Equations (ODEs)
-### Partial Differential Equations (PDEs)
+### Ordinary Differential Equations
+#### Existence, Uniqueness, Linear Systems, and Sturm-Liouville Theory
+### Partial Differential Equations
 #### Heat, Wave, and Laplace Equations
+#### Separation of Variables and Fourier Methods
 ### Dynamical Systems
-#### Chaos Theory
+#### Stability, Bifurcations, Chaos, and Fractals
+
+## Asymptotic Analysis
+### Big-O Notation and Asymptotic Expansions
+### Laplace's Method, Stationary Phase, and WKB Approximation
 
 # Part IV Geometry
-
 ## Classical Geometry
 ### Euclidean Geometry
+#### Axioms, Postulates, Triangles, Circles, and Polygons
 ### Non-Euclidean Geometry
-#### Hyperbolic Geometry
-#### Elliptic Geometry
+#### Hyperbolic and Elliptic (Spherical) Geometry
 
-## Analytic Geometry
-### Coordinate Systems
-### Conic Sections
+## Analytic and Projective Geometry
+### Coordinate Systems and Transformations
+### Conic Sections and Quadric Surfaces
+### Projective Geometry
 
 ## Differential Geometry
-### Manifolds
-### Tensors
-### Riemannian Geometry
-#### Curvature (Ricci, Riemann)
-#### Geodesics
+### Curves and Surfaces
+#### Curvature, Torsion, and Frenet-Serret Formulas
+### Manifolds, Tensors, and Riemannian Geometry
+#### Metric, Curvature, Geodesics, and Gauss-Bonnet Theorem
 ### Symplectic Geometry
 
 ## Algebraic Geometry
-### Varieties and Schemes
-### Sheaves and Cohomology
+### Varieties, Schemes, and Sheaves
+#### Hilbert's Nullstellensatz and Serre Duality
+### Elliptic Curves
 
 ## Topology
 ### Point-Set Topology
-#### Compactness and Connectedness
-#### Hausdorff Spaces
+#### Compactness, Connectedness, and Separation Axioms
 ### Algebraic Topology
-#### Fundamental Groups (Homotopy)
-#### Homology and Cohomology
-### Knot Theory
-### Differential Topology
+#### Fundamental Group, Homology, and Cohomology
+### Knot Theory and Differential Topology
 
 # Part V Discrete Mathematics
-
 ## Combinatorics
-### Counting Principles
-### Generating Functions
-### Graph Theory
-#### Paths, Cycles, and Connectivity
-#### Planarity and Coloring
-#### Trees
-### Ramsey Theory
+### Counting Principles and Inclusion-Exclusion
+### Generating Functions and Recurrence Relations
+### Extremal Combinatorics and Ramsey Theory
+
+## Graph Theory
+### Paths, Cycles, Connectivity, and Trees
+### Planarity, Coloring, Matchings, and Network Flows
 
 ## Discrete Structures
-### Posets and Lattices
-### Complexity Theory
-#### P vs NP
+### Posets, Lattices, and Möbius Inversion
+### Boolean Algebras
+### Design Theory and Latin Squares
+
+## Algorithms and Complexity
+### Algorithm Analysis and Asymptotic Complexity
+### Computability and Complexity Theory
+#### P vs NP, NP-Completeness, and Major Complexity Classes
 
 # Part VI Applied Mathematics
-
 ## Probability and Statistics
 ### Probability Theory
-#### Law of Large Numbers
-#### Central Limit Theorem
+#### Axioms, Conditional Probability, Bayes' Theorem, Random Variables
+#### Law of Large Numbers and Central Limit Theorem
 ### Statistics
-#### Hypothesis Testing
-#### Regression Analysis
+#### Estimation, Hypothesis Testing, Regression, and Bayesian Inference
 ### Stochastic Processes
-#### Markov Chains
-#### Brownian Motion
+#### Markov Chains, Poisson Processes, Martingales, and Brownian Motion
+#### Stochastic Calculus and Itô's Lemma
 
-## Information Theory
-### Shannon Entropy
-### Coding Theory
+## Information and Coding Theory
+### Shannon Entropy, Mutual Information, and Channel Capacity
+### Error-Correcting Codes and Source Coding
 
 ## Numerical Analysis
-### Root Finding
-### Numerical Integration/Differentiation
-### Monte Carlo Methods
+### Root Finding and Numerical Linear Algebra
+### Interpolation, Approximation, and Least Squares
+### Numerical Integration, Differentiation, and Solutions of ODEs/PDEs
+### Finite Element and Finite Difference Methods
+### Monte Carlo and Markov Chain Monte Carlo Methods
 
-## Optimization
-### Linear Programming
-### Convex Optimization
-### Game Theory
+## Optimization and Operations Research
+### Linear, Nonlinear, and Convex Optimization
+### Integer and Combinatorial Optimization
+### Dynamic Programming and Game Theory
 #### Nash Equilibrium
+### Calculus of Variations and Optimal Control
+
+## Mathematical Physics
+### Classical Mechanics (Lagrangian and Hamiltonian)
+### Electromagnetism and Quantum Mechanics
+### Statistical Mechanics and General Relativity
+### Fluid Dynamics and Navier-Stokes Equations
 
 ---
+
+## Trigonometry
+
+**Convention.**
+
+$$
+\theta \in \mathbb{R}, \quad \text{angles in radians unless stated otherwise}
+$$
+
+**Definition** (unit circle).
+
+$$
+S^1 \coloneqq \lbrace (x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1 \rbrace
+$$
+
+**Definition** (trigonometric functions).
+
+Let $(\cos\theta, \sin\theta)$ be the point on $S^1$ reached by traversing arc length $|\theta|$ from $(1, 0)$, counterclockwise if $\theta \gt 0$, clockwise if $\theta \lt 0$.
+
+$$
+\sin : \mathbb{R} \to [-1, 1], \quad \sin\theta \coloneqq y
+$$
+
+$$
+\cos : \mathbb{R} \to [-1, 1], \quad \cos\theta \coloneqq x
+$$
+
+$$
+\tan : \mathbb{R} \setminus \left\lbrace \frac{\pi}{2} + n\pi \mid n \in \mathbb{Z} \right\rbrace \to \mathbb{R}, \quad \tan\theta \coloneqq \frac{\sin\theta}{\cos\theta}
+$$
+
+**Definition** (reciprocal functions).
+
+$$
+\csc\theta \coloneqq \frac{1}{\sin\theta}, \quad \sin\theta \neq 0
+$$
+
+$$
+\sec\theta \coloneqq \frac{1}{\cos\theta}, \quad \cos\theta \neq 0
+$$
+
+$$
+\cot\theta \coloneqq \frac{\cos\theta}{\sin\theta}, \quad \sin\theta \neq 0
+$$
+
+**Proposition** (Pythagorean identities).
+
+$$
+\sin^2\theta + \cos^2\theta = 1
+$$
+
+$$
+1 + \tan^2\theta = \sec^2\theta
+$$
+
+$$
+1 + \cot^2\theta = \csc^2\theta
+$$
+
+**Proposition** (parity).
+
+$$
+\sin(-\theta) = -\sin\theta \quad \text{(odd)}
+$$
+
+$$
+\cos(-\theta) = \cos\theta \quad \text{(even)}
+$$
+
+$$
+\tan(-\theta) = -\tan\theta \quad \text{(odd)}
+$$
+
+**Proposition** (periodicity).
+
+$$
+\sin(\theta + 2\pi) = \sin\theta
+$$
+
+$$
+\cos(\theta + 2\pi) = \cos\theta
+$$
+
+$$
+\tan(\theta + \pi) = \tan\theta
+$$
+
+**Proposition** (special values).
+
+$$
+\begin{array}{c|cccccc}
+\theta & 0 & \dfrac{\pi}{6} & \dfrac{\pi}{4} & \dfrac{\pi}{3} & \dfrac{\pi}{2} & \pi \\[6pt]
+\hline \\[-6pt]
+\sin\theta & 0 & \dfrac{1}{2} & \dfrac{\sqrt{2}}{2} & \dfrac{\sqrt{3}}{2} & 1 & 0 \\[10pt]
+\cos\theta & 1 & \dfrac{\sqrt{3}}{2} & \dfrac{\sqrt{2}}{2} & \dfrac{1}{2} & 0 & -1 \\[10pt]
+\tan\theta & 0 & \dfrac{1}{\sqrt{3}} & 1 & \sqrt{3} & \text{undef} & 0
+\end{array}
+$$
+
+**Proposition** (cofunction identities).
+
+$$
+\sin\left(\frac{\pi}{2} - \theta\right) = \cos\theta
+$$
+
+$$
+\cos\left(\frac{\pi}{2} - \theta\right) = \sin\theta
+$$
+
+$$
+\tan\left(\frac{\pi}{2} - \theta\right) = \cot\theta
+$$
+
+**Proposition** (angle addition).
+
+$$
+\sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta
+$$
+
+$$
+\cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta
+$$
+
+$$
+\tan(\alpha \pm \beta) = \frac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta}
+$$
+
+**Corollary** (double angle).
+
+$$
+\sin 2\theta = 2\sin\theta\cos\theta
+$$
+
+$$
+\cos 2\theta = \cos^2\theta - \sin^2\theta = 2\cos^2\theta - 1 = 1 - 2\sin^2\theta
+$$
+
+$$
+\tan 2\theta = \frac{2\tan\theta}{1 - \tan^2\theta}
+$$
+
+**Corollary** (half angle).
+
+$$
+\sin\frac{\theta}{2} = \pm\sqrt{\frac{1 - \cos\theta}{2}}
+$$
+
+$$
+\cos\frac{\theta}{2} = \pm\sqrt{\frac{1 + \cos\theta}{2}}
+$$
+
+$$
+\tan\frac{\theta}{2} = \frac{1 - \cos\theta}{\sin\theta} = \frac{\sin\theta}{1 + \cos\theta}
+$$
+
+**Proposition** (product to sum).
+
+$$
+\sin\alpha\cos\beta = \frac{1}{2}\left[\sin(\alpha + \beta) + \sin(\alpha - \beta)\right]
+$$
+
+$$
+\cos\alpha\cos\beta = \frac{1}{2}\left[\cos(\alpha - \beta) + \cos(\alpha + \beta)\right]
+$$
+
+$$
+\sin\alpha\sin\beta = \frac{1}{2}\left[\cos(\alpha - \beta) - \cos(\alpha + \beta)\right]
+$$
+
+**Proposition** (sum to product).
+
+$$
+\sin\alpha + \sin\beta = 2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}
+$$
+
+$$
+\sin\alpha - \sin\beta = 2\cos\frac{\alpha+\beta}{2}\sin\frac{\alpha-\beta}{2}
+$$
+
+$$
+\cos\alpha + \cos\beta = 2\cos\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}
+$$
+
+$$
+\cos\alpha - \cos\beta = -2\sin\frac{\alpha+\beta}{2}\sin\frac{\alpha-\beta}{2}
+$$
+
+**Theorem** (law of sines).
+
+$$
+\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R
+$$
+
+**Theorem** (law of cosines).
+
+$$
+c^2 = a^2 + b^2 - 2ab\cos C
+$$
+
+**Notation** (inverse trigonometric functions).
+
+$$
+\arcsin : [-1, 1] \to \left[-\frac{\pi}{2}, \frac{\pi}{2}\right]
+$$
+
+$$
+\arccos : [-1, 1] \to [0, \pi]
+$$
+
+$$
+\arctan : \mathbb{R} \to \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)
+$$
+
 
 ## Function
 
