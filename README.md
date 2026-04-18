@@ -466,25 +466,25 @@ $$
 
 $$
 \begin{array}{c|cccccc}
+\theta & 0 & \dfrac{\pi}{6} & \dfrac{\pi}{4} & \dfrac{\pi}{3} & \dfrac{\pi}{2} & \pi \\
 \hline
+\sin\theta & 0 & \dfrac{1}{2} & \dfrac{\sqrt{2}}{2} & \dfrac{\sqrt{3}}{2} & 1 & 0 \\
+\cos\theta & 1 & \dfrac{\sqrt{3}}{2} & \dfrac{\sqrt{2}}{2} & \dfrac{1}{2} & 0 & -1 \\
+\tan\theta & 0 & \dfrac{1}{\sqrt{3}} & 1 & \sqrt{3} & \text{undefined} & 0
+\end{array}
+$$
+
+<!--
+$$
+\begin{array}{c|cccccc}
 \theta & 0 & \frac{\pi}{6} & \frac{\pi}{4} & \frac{\pi}{3} & \frac{\pi}{2} & \pi \\
 \hline
 \sin\theta & 0 & \frac{1}{2} & \frac{\sqrt{2}}{2} & \frac{\sqrt{3}}{2} & 1 & 0 \\
 \cos\theta & 1 & \frac{\sqrt{3}}{2} & \frac{\sqrt{2}}{2} & \frac{1}{2} & 0 & -1 \\
-\tan\theta & 0 & \frac{1}{\sqrt{3}} & 1 & \sqrt{3} & \text{undefined} & 0 \\
-\hline
+\tan\theta & 0 & \frac{1}{\sqrt{3}} & 1 & \sqrt{3} & \text{undefined} & 0
 \end{array}
 $$
-
-<div align="center">
-
-| $\theta$ | $0$ | $\pi/6$ | $\pi/4$ | $\pi/3$ | $\pi/2$ | $\pi$ |
-|---|---|---|---|---|---|---|
-| $\sin\theta$ | $0$ | $1/2$ | $\sqrt{2}/2$ | $\sqrt{3}/2$ | $1$ | $0$ |
-| $\cos\theta$ | $1$ | $\sqrt{3}/2$ | $\sqrt{2}/2$ | $1/2$ | $0$ | $-1$ |
-| $\tan\theta$ | $0$ | $1/\sqrt{3}$ | $1$ | $\sqrt{3}$ | undef | $0$ |
-
-</div>
+-->
 
 **Proposition** (cofunction identities).
 
