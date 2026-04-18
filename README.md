@@ -2,8 +2,9 @@
 
 **Notation.** Formula parameters are written as named quantities (e.g. $\text{radius}$, $\text{height}$); elsewhere standard variables apply.
 
-<!-- Editorial labels
+<!-- Taxonomy / editorial labels
 
+Primitive notion: Undefined foundational concept accepted without formal definition.
 Axiom / Postulate: Fundamental assumed truth; the unproven foundation of a system.
 Definition: Precise statement establishing the exact meaning of a concept.
 Theorem: Major, highly significant mathematical statement that has been proven.
@@ -19,18 +20,62 @@ Notation: Explicit assignment of symbols or shorthand to represent mathematical 
 Remark: Extra context, historical note, useful perspective or subtle observation for the reader.
 Example: Concrete, specific instance illustrating a definition, theorem, or concept.
 
+Modelo axiomático: 
+
+Conceitos primitivos (indefinidos, para evitar regressão infinita) > Axiomas/Postulados (verdades assumidas sobre os primitivos) > Definições (de conceitos derivados, construídos a partir dos primitivos) > Teoremas, Proposições, Lemas, etc.
+
 -->
 
-<!-- Using semantic LaTeX commands instead of literal / Unicode symbols 
-\lt
-\ast
-\coloneqq
+<!--
+
+\cdot  \times  \div  \pm  \mp
+\ast   \star   \circ  \bullet
+\oplus \otimes \ominus \oslash
+\cup   \cap    \sqcup  \sqcap
+\vee   \wedge
+\leq   \geq    \neq    \approx  \equiv  \sim  \simeq
+\subset \supset \subseteq \supseteq \in \notin
+\lt    \gt
+
+\to  \gets  \leftrightarrow
+\Rightarrow  \Leftarrow  \Leftrightarrow
+\mapsto  \hookrightarrow  \twoheadrightarrow
+\uparrow  \downarrow
+
 \lbrace \rbrace
-etc
+\langle \rangle
+\lfloor \rfloor
+\lceil  \rceil
+\vert   \Vert
+
+\coloneqq  \eqqcolon
+\triangleq  \doteq
+
+\forall  \exists  \nexists
+\neg  \land  \lor
+\top  \bot
+\vdash  \models
+
+\ldots  \cdots  \vdots  \ddots
+\infty  \partial  \nabla
+\emptyset  \varnothing
+\ell  \hbar
+\dagger  \ddagger
+
+\epsilon \varepsilon
+\phi     \varphi
+\theta   \vartheta
+\rho     \varrho
+\pi      \varpi
+\sigma   \varsigma
+
 -->
 
-<!-- spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ",", etc;
-use `\quad` and `\` for rendering spaces -->
+<!-- 
+
+spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ",", etc; use `\quad` and `\` for rendering spaces 
+
+-->
 
 ---
 
