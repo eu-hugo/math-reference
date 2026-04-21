@@ -366,6 +366,12 @@ spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ",", etc; use `
 
 ## Sequences and Series
 
+**Notation.**
+
+$$
+a_n : \text{n-th term}, \quad a_1 : \text{first term}, \quad d : \text{common difference}, \quad r : \text{common ratio}, \quad n : \text{number of terms}
+$$
+
 **Definition** (sequence).
 
 $$
@@ -376,12 +382,6 @@ $$
 
 $$
 S_n \coloneqq \sum_{k=1}^{n} a_k = a_1 + a_2 + \cdots + a_n
-$$
-
-**Notation.**
-
-$$
-a_n : \text{n-th term}, \quad a_1 : \text{first term}, \quad d : \text{common difference}, \quad r : \text{common ratio}, \quad n : \text{number of terms}
 $$
 
 **Definition** (arithmetic sequence).
