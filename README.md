@@ -1765,11 +1765,13 @@ $$
 ax^2 + bx + c = a(x - x_1)(x - x_2)
 $$
 
-**Proposition** (completing the square).
+**Proposition** (sum–product factorization).
 
 $$
-ax^2 + bx + c = a\left(x + \frac{b}{2a}\right)^2 - \frac{\Delta}{4a}
+x^2 + bx + c = (x - m)(x - n) \iff m + n = -b, \quad mn = c
 $$
+
+###### Remark. Vieta's formulas (monic case).
 
 **Proposition** (root identities).
 
@@ -1779,6 +1781,12 @@ $$
 
 $$
 x_1^2 + x_2^2 = \frac{b^2 - 2ac}{a^2}
+$$
+
+**Proposition** (completing the square).
+
+$$
+ax^2 + bx + c = a\left(x + \frac{b}{2a}\right)^2 - \frac{\Delta}{4a}
 $$
 
 ### Cubic Equation
