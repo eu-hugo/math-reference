@@ -434,7 +434,7 @@ $$
 a, b, c \in \mathbb{R}^+\ \text{(side lengths)}, \quad A, B, C \in \left(0, \pi\right)\ \text{(opposite angles)}, \quad R \in \mathbb{R}^+\ \text{(circumradius)}
 $$
 
-**Definition** (trigonometric functions, right triangle).
+**Definition** (trigonometric functions by right triangle).
 
 $$
 \sin\theta \coloneqq \frac{\text{opposite}}{\text{hypotenuse}}, \quad \cos\theta \coloneqq \frac{\text{adjacent}}{\text{hypotenuse}}, \quad \tan\theta \coloneqq \frac{\text{opposite}}{\text{adjacent}}, \quad \theta \in \left(0, \frac{\pi}{2}\right)
@@ -452,7 +452,7 @@ $$
 S^1 \coloneqq \lbrace (x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1 \rbrace
 $$
 
-**Definition** (trigonometric functions, unit circle).
+**Definition** (trigonometric functions by unit circle).
 
 $$
 \theta \coloneqq \text{signed arc length from } (1, 0) \text{ along } S^1, \quad \theta \in \mathbb{R}
@@ -470,7 +470,7 @@ $$
 \tan\theta \coloneqq \frac{\sin\theta}{\cos\theta}
 $$
 
-**Definition** (trigonometric functions, power series).
+**Definition** (trigonometric functions by power series).
 
 $$
 \sin\theta \coloneqq \sum_{n=0}^{\infty} \frac{(-1)^n \theta^{2n+1}}{(2n+1)!}, \quad \cos\theta \coloneqq \sum_{n=0}^{\infty} \frac{(-1)^n \theta^{2n}}{(2n)!}
