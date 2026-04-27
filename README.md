@@ -716,13 +716,13 @@ $$
 **Definition** (even function).
 
 $$
-f(-x) = f(x) \quad \forall x \in A
+f : A \to B,\quad A \subseteq \mathbb{R},\ A = -A,\quad f(-x) = f(x)\ \forall x \in A
 $$
 
 **Definition** (odd function).
 
 $$
-f(-x) = -f(x) \quad \forall x \in A
+f : A \to B,\quad A \subseteq \mathbb{R},\ A = -A,\quad f(-x) = -f(x)\ \forall x \in A
 $$
 
 ## Elementary Functions
