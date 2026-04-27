@@ -686,19 +686,19 @@ $$
 **Definition** (injectivity).
 
 $$
-f(x_1) = f(x_2) \implies x_1 = x_2
+f : A \to B \text{ injective} \iff \forall x_1, x_2 \in A,\ f(x_1) = f(x_2) \implies x_1 = x_2
 $$
 
 **Definition** (surjectivity).
 
 $$
-\forall y \in B\ \exists x \in A : f(x) = y
+f : A \to B \text{ surjective} \iff \forall y \in B\ \exists x \in A : f(x) = y
 $$
 
 **Definition** (bijectivity).
 
 $$
-f \text{ bijective} \iff f \text{ injective} \land f \text{ surjective}
+f : A \to B \text{ bijective} \iff f \text{ injective} \land f \text{ surjective}
 $$
 
 **Definition** (inverse function).
@@ -707,16 +707,12 @@ $$
 f^{-1} : B \to A \iff f^{-1} \circ f = \mathrm{id}_A \land f \circ f^{-1} = \mathrm{id}_B
 $$
 
+###### Remark. Pointwise form: $f^{-1}(f(x)) = x\ \forall x \in A \land f(f^{-1}(y)) = y\ \forall y \in B$
+
 **Proposition** (existence and uniqueness).
 
 $$
 f : A \to B \text{ bijective} \iff \exists! f^{-1} : B \to A
-$$
-
-**Corollary** (pointwise form).
-
-$$
-f^{-1}(f(x)) = x\ \forall x \in A \land f(f^{-1}(y)) = y\ \forall y \in B
 $$
 
 **Definition** (composition).
