@@ -916,19 +916,19 @@ $$
 **Definition** (scalene).
 
 $$
-a \neq b \neq c \neq a
+\triangle ABC \text{ scalene} \iff a \neq b \land b \neq c \land a \neq c
 $$
 
-**Definition** (isosceles).
+**Definition** (isosceles triangle).
 
 $$
-a = b \neq c
+\triangle ABC \text{ isosceles} \iff (a = b \land b \neq c) \lor (a = c \land a \neq b) \lor (b = c \land b \neq a)
 $$
 
-**Definition** (equilateral).
+**Definition** (equilateral triangle).
 
 $$
-a = b = c \quad
+\triangle ABC \text{ equilateral} \iff a = b \land b = c
 $$
 
 **Definition** (acute).
