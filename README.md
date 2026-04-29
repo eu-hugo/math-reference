@@ -370,19 +370,19 @@ $$
 a_n : \text{n-th term}, \quad a_1 : \text{first term}, \quad d : \text{common difference}, \quad r : \text{common ratio}, \quad n : \text{number of terms}
 $$
 
-**Definition** (sequence).
+**Definition (Sequence).**.
 
 $$
 (a_n)_{n \in \mathbb{N}} = a_1, a_2, a_3, \ldots
 $$
 
-**Definition** (series).
+**Definition (Series).**
 
 $$
 S_n \coloneqq \sum_{k=1}^{n} a_k = a_1 + a_2 + \cdots + a_n
 $$
 
-**Definition** (arithmetic sequence).
+**Definition (Arithmetic sequence).**
 
 $$
 a_n \coloneqq a_1 + (n-1)d, \quad d \in \mathbb{R}, \quad n \in \mathbb{N}
@@ -392,13 +392,13 @@ $$
 a_n = a_{n-1} + d \quad \text{(recursive)}
 $$
 
-**Proposition** (arithmetic sum).
+**Proposition (Arithmetic sum).**
 
 $$
 S_n = \frac{n}{2}(2a_1 + (n-1)d) = \frac{n}{2}(a_1 + a_n)
 $$
 
-**Definition** (geometric sequence).
+**Definition (Geometric sequence).**
 
 $$
 a_n \coloneqq a_1 \cdot r^{n-1}, \quad r \in \mathbb{R} \setminus \lbrace 0 \rbrace, \quad n \in \mathbb{N}
@@ -408,13 +408,13 @@ $$
 a_n = a_{n-1} \cdot r \quad \text{(recursive)}
 $$
 
-**Proposition** (geometric sum).
+**Proposition (Geometric sum).**
 
 $$
 S_n = a_1 \cdot \frac{1 - r^n}{1 - r} = a_1 \cdot \frac{r^n - 1}{r - 1}, \quad r \neq 1
 $$
 
-**Corollary** (infinite geometric series).
+**Corollary (Infinite geometric series).**
 
 $$
 S \coloneqq \sum_{k=1}^{\infty} a_k = \frac{a_1}{1 - r}, \quad |r| \lt 1
@@ -428,31 +428,31 @@ $$
 \theta \in \mathbb{R}, \quad \text{angles in radians unless stated otherwise}
 $$
 
-**Convention** (standard triangle elements).
+**Convention (Standard triangle elements).**
 
 $$
 a, b, c \in \mathbb{R}^+\ \text{(side lengths)}, \quad A, B, C \in \left(0, \pi\right)\ \text{(opposite angles)}, \quad R \in \mathbb{R}^+\ \text{(circumradius)}
 $$
 
-**Definition** (trigonometric functions by right triangle).
+**Definition (Right triangle relations).**
 
 $$
 \sin\theta \coloneqq \frac{\text{opposite}}{\text{hypotenuse}}, \quad \cos\theta \coloneqq \frac{\text{adjacent}}{\text{hypotenuse}}, \quad \tan\theta \coloneqq \frac{\text{opposite}}{\text{adjacent}}, \quad \theta \in \left(0, \frac{\pi}{2}\right)
 $$
 
-**Corollary** (reciprocal functions).
+**Corollary (Reciprocal).**
 
 $$
 \csc\theta \coloneqq \frac{1}{\sin\theta}, \quad \sec\theta \coloneqq \frac{1}{\cos\theta}, \quad \cot\theta \coloneqq \frac{1}{\tan\theta} = \frac{\cos\theta}{\sin\theta}
 $$
 
-**Definition** (unit circle).
+**Definition (Unit circle).**
 
 $$
 S^1 \coloneqq \lbrace (x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1 \rbrace
 $$
 
-**Definition** (trigonometric functions by unit circle).
+**Definition (Trigometric functions).**
 
 $$
 \theta \coloneqq \text{signed arc length from } (1, 0) \text{ along } S^1, \quad \theta \in \mathbb{R}
@@ -470,13 +470,13 @@ $$
 \tan\theta \coloneqq \frac{\sin\theta}{\cos\theta}
 $$
 
-**Definition** (trigonometric functions by power series).
+**Definition (Power series).**
 
 $$
 \sin\theta \coloneqq \sum_{n=0}^{\infty} \frac{(-1)^n \theta^{2n+1}}{(2n+1)!}, \quad \cos\theta \coloneqq \sum_{n=0}^{\infty} \frac{(-1)^n \theta^{2n}}{(2n)!}
 $$
 
-**Proposition** (Pythagorean identities).
+**Proposition (Pythagorean identities).**
 
 $$
 \sin^2\theta + \cos^2\theta = 1
@@ -490,7 +490,7 @@ $$
 1 + \cot^2\theta = \csc^2\theta
 $$
 
-**Proposition** (parity).
+**Proposition (Parity).**
 
 $$
 \sin(-\theta) = -\sin\theta \quad \text{(odd)}
@@ -504,7 +504,7 @@ $$
 \tan(-\theta) = -\tan\theta \quad \text{(odd)}
 $$
 
-**Proposition** (periodicity).
+**Proposition (Periodicity).**
 
 $$
 \sin(\theta + 2\pi) = \sin\theta
@@ -518,7 +518,7 @@ $$
 \tan(\theta + \pi) = \tan\theta
 $$
 
-**Proposition** (special values).
+**Proposition (Special angle values).**
 
 $$
 \begin{array}{c|cccccc}
@@ -530,19 +530,7 @@ $$
 \end{array}
 $$
 
-<!--
-$$
-\begin{array}{c|cccccc}
-\theta & 0 & \frac{\pi}{6} & \frac{\pi}{4} & \frac{\pi}{3} & \frac{\pi}{2} & \pi \\
-\hline
-\sin\theta & 0 & \frac{1}{2} & \frac{\sqrt{2}}{2} & \frac{\sqrt{3}}{2} & 1 & 0 \\
-\cos\theta & 1 & \frac{\sqrt{3}}{2} & \frac{\sqrt{2}}{2} & \frac{1}{2} & 0 & -1 \\
-\tan\theta & 0 & \frac{1}{\sqrt{3}} & 1 & \sqrt{3} & \text{undefined} & 0
-\end{array}
-$$
--->
-
-**Proposition** (cofunction identities).
+**Proposition (Cofunction identities).**
 
 $$
 \sin\left(\frac{\pi}{2} - \theta\right) = \cos\theta
@@ -556,7 +544,7 @@ $$
 \tan\left(\frac{\pi}{2} - \theta\right) = \cot\theta
 $$
 
-**Proposition** (angle addition).
+**Proposition (Angle addition identities).**
 
 $$
 \sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta
@@ -570,7 +558,7 @@ $$
 \tan(\alpha \pm \beta) = \frac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta}
 $$
 
-**Corollary** (double angle).
+**Corollary (Double angle identities).**
 
 $$
 \sin 2\theta = 2\sin\theta\cos\theta
@@ -584,7 +572,7 @@ $$
 \tan 2\theta = \frac{2\tan\theta}{1 - \tan^2\theta}
 $$
 
-**Corollary** (half angle).
+**Corollary (Half angle identities).**
 
 $$
 \sin\frac{\theta}{2} = \pm\sqrt{\frac{1 - \cos\theta}{2}}
@@ -598,7 +586,7 @@ $$
 \tan\frac{\theta}{2} = \frac{1 - \cos\theta}{\sin\theta} = \frac{\sin\theta}{1 + \cos\theta}
 $$
 
-**Proposition** (product to sum).
+**Proposition (Product to sum identities).**
 
 $$
 \sin\alpha\cos\beta = \frac{1}{2}\left[\sin(\alpha + \beta) + \sin(\alpha - \beta)\right]
@@ -612,7 +600,7 @@ $$
 \sin\alpha\sin\beta = \frac{1}{2}\left[\cos(\alpha - \beta) - \cos(\alpha + \beta)\right]
 $$
 
-**Proposition** (sum to product).
+**Proposition (Sum to product identities).**
 
 $$
 \sin\alpha + \sin\beta = 2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}
@@ -630,25 +618,25 @@ $$
 \cos\alpha - \cos\beta = -2\sin\frac{\alpha+\beta}{2}\sin\frac{\alpha-\beta}{2}
 $$
 
-**Theorem** (law of sines).
+**Theorem (Law of sines).**
 
 $$
 \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R
 $$
 
-**Theorem** (law of cosines).
+**Theorem (Law of cosines).**
 
 $$
 c^2 = a^2 + b^2 - 2ab\cos C
 $$
 
-**Theorem** (law of tangents).
+**Theorem (Law of tangents).**
 
 $$
 \frac{a - b}{a + b} = \frac{\tan\dfrac{A - B}{2}}{\tan\dfrac{A + B}{2}}
 $$
 
-**Definition** (inverse trigonometric functions).
+**Definition (Inverse trigonometric functions).**
 
 $$
 \arcsin \coloneqq \sin^{-1} : [-1, 1] \to \left[-\frac{\pi}{2}, \frac{\pi}{2}\right]
@@ -665,13 +653,13 @@ $$
 
 ## Functions
 
-**Definition** (function).
+**Definition (Function).**
 
 $$
 f : A \to B, \quad x \mapsto f(x)
 $$
 
-**Definition** (domain, codomain, image).
+**Definition (Domain, codomain, image).**
 
 $$
 \text{dom}(f) \coloneqq A, \quad \text{cod}(f) \coloneqq B, \quad \text{im}(f) \coloneqq \lbrace f(x) \mid x \in A \rbrace
@@ -683,45 +671,45 @@ $$
 \text{im}(f) \subseteq \text{cod}(f)
 $$
 
-**Definition** (injectivity).
+**Definition (Injectivity).**
 
 $$
 f : A \to B \text{ injective} \iff \forall x_1, x_2 \in A,\ f(x_1) = f(x_2) \implies x_1 = x_2
 $$
 
-**Definition** (surjectivity).
+**Definition (Surjectivity).**
 
 $$
 f : A \to B \text{ surjective} \iff \forall y \in B\ \exists x \in A : f(x) = y
 $$
 
-**Definition** (bijectivity).
+**Definition (Bijectivity).**
 
 $$
 f : A \to B \text{ bijective} \iff f \text{ injective} \land f \text{ surjective}
 $$
 
-**Definition** (inverse function).
+**Definition (Inverse function).**
 
 $$
 f^{-1} : B \to A \iff f^{-1} \circ f = \mathrm{id}_A \land f \circ f^{-1} = \mathrm{id}_B
 $$
 
-###### Remark. Pointwise form: $f^{-1}(f(x)) = x\ \forall x \in A \land f(f^{-1}(y)) = y\ \forall y \in B$
+**Remark.** Pointwise form: $f^{-1}(f(x)) = x\ \forall x \in A \land f(f^{-1}(y)) = y\ \forall y \in B$.
 
-**Proposition** (existence and uniqueness).
+**Proposition (Existence and uniqueness).**
 
 $$
 f : A \to B \text{ bijective} \iff \exists! f^{-1} : B \to A
 $$
 
-**Definition** (composition).
+**Definition (Composition).**
 
 $$
 (g \circ f)(x) \coloneqq g(f(x)), \quad f : A \to B,\ g : B \to C
 $$
 
-**Definition** (monotonicity).
+**Definition (Monotonicity).**
 
 $$
 f \text{ increasing} \iff x_1 \leq x_2 \implies f(x_1) \leq f(x_2)
@@ -739,25 +727,25 @@ $$
 f \text{ strictly decreasing} \iff x_1 < x_2 \implies f(x_1) > f(x_2)
 $$
 
-**Definition** (even function).
+**Definition (Even function).**
 
 $$
 f : A \to B,\quad A \subseteq \mathbb{R},\ A = -A,\quad f(-x) = f(x)\ \forall x \in A
 $$
 
-**Definition** (odd function).
+**Definition (Odd function).**
 
 $$
 f : A \to B,\quad A \subseteq \mathbb{R},\ A = -A,\quad f(-x) = -f(x)\ \forall x \in A
 $$
 
-**Definition** (identity function).
+**Definition (Identity function).**
 
 $$
 \mathrm{id}_A : A \to A,\quad x \mapsto x
 $$
 
-**Definition** (power function).
+**Definition (Power function).**
 
 $$
 f : \mathbb{R} \to \begin{cases} \mathbb{R}^+ \cup \{0\} & n \text{ even} \\ \mathbb{R} & n \text{ odd} \end{cases}, \quad f(x) = x^n, \quad n \in \mathbb{Z}
@@ -767,7 +755,7 @@ $$
 f : \mathbb{R} \to \begin{cases} \mathbb{R}_{\geq 0} & n \text{ even} \\ \mathbb{R} & n \text{ odd} \end{cases}, \quad f(x) = x^n
 $$
 
-**Proposition** (parity).
+**Proposition (Parity).**
 
 $$
 n \text{ even} \implies f \text{ even}
@@ -777,7 +765,7 @@ $$
 n \text{ odd} \implies f \text{ odd}
 $$
 
-**Definition** (absolute value function).
+**Definition (Absolute value function).**
 
 $$
 f : \mathbb{R} \to \mathbb{R}^+ \cup \{0\}, \quad f(x) = |x|
@@ -787,13 +775,13 @@ $$
 f : \mathbb{R} \to \mathbb{R}_{\geq 0}, \quad f(x) = |x|
 $$
 
-**Proposition** (parity).
+**Proposition (Parity).**
 
 $$
 f \text{ even}
 $$
 
-**Definition** (square root function).
+**Definition (Square root function).**
 
 $$
 f : \mathbb{R}^+ \cup \{0\} \to \mathbb{R}^+ \cup \{0\}, \quad f(x) = \sqrt{x}
@@ -803,31 +791,31 @@ $$
 f : \mathbb{R}_{\geq 0} \to \mathbb{R}_{\geq 0}, \quad f(x) = \sqrt{x}
 $$
 
-**Definition** (reciprocal function).
+**Definition (Reciprocal function).**
 
 $$
 f : \mathbb{R} \setminus \lbrace 0 \rbrace \to \mathbb{R} \setminus \lbrace 0 \rbrace, \quad f(x) = \frac{1}{x}
 $$
 
-**Proposition** (parity).
+**Proposition (Parity).**
 
 $$
 f \text{ odd}
 $$
 
-**Definition** (floor function).
+**Definition (Floor function).**
 
 $$
 f : \mathbb{R} \to \mathbb{Z}, \quad f(x) = \lfloor x \rfloor \coloneqq \max\{n \in \mathbb{Z} \mid n \leq x\}
 $$
 
-**Definition** (ceiling function).
+**Definition (Ceiling function).**
 
 $$
 f : \mathbb{R} \to \mathbb{Z}, \quad f(x) = \lceil x \rceil \coloneqq \min\{n \in \mathbb{Z} \mid n \geq x\}
 $$
 
-**Definition** (exponential function).
+**Definition (Exponential function).**
 
 $$
 f : \mathbb{R} \to \mathbb{R}^+, \quad f(x) = b^x, \quad b \in \mathbb{R}^+, \quad b \neq 1
@@ -843,21 +831,21 @@ $$
 0 \lt b \lt 1 \implies f \text{ strictly decreasing}
 $$
 
-###### Remark. Exponential growth and exponential decay.
+**Remark**. Exponential growth and exponential decay.
 
-**Corollary** (natural exponential).
+**Corollary (Natural exponential).**
 
 $$
 f(x) = e^x
 $$
 
-**Corollary** (derivative).
+**Corollary (Derivative).**
 
 $$
 \frac{d}{dx} e^x = e^x
 $$
 
-**Definition** (logarithmic function).
+**Definition (Logarithmic function).**
 
 $$
 f : \mathbb{R}^+ \to \mathbb{R}, \quad f(x) = \log_b x, \quad b \in \mathbb{R}^+, \quad b \neq 1
@@ -873,7 +861,7 @@ $$
 0 \lt b \lt 1 \implies f \text{ strictly decreasing}
 $$
 
-**Corollary** (natural logarithm function).
+**Corollary (Natural logarithm function).**
 
 $$
 f(x) = \ln x
@@ -885,21 +873,21 @@ $$
 A : \text{amplitude}, \quad B : \text{period factor}, \quad C : \text{phase shift}, \quad D : \text{vertical shift}
 $$
 
-**Definition** (sinusoidal function).
+**Definition (Sinusoidal function).**
 
 $$
 f : \mathbb{R} \to \mathbb{R}, \quad f(x) \coloneqq A\cos(B(x - C)) + D, \quad A,B,C,D \in \mathbb{R},\ B \neq 0
 $$
 
-###### Remark. $A\sin(B(x - C)) + D = A\cos\left(B\left(x - C - \frac{\pi}{2B}\right)\right) + D$
+**Remark**. $A\sin(B(x - C)) + D = A\cos\left(B\left(x - C - \frac{\pi}{2B}\right)\right) + D$.
 
-**Proposition** (range).
+**Proposition (Range).**
 
 $$
 \text{im}(f) = [D - |A|,\ D + |A|]
 $$
 
-**Definition** (tangent function).
+**Definition (Tangent function).**
 
 $$
 f : \mathbb{R} \setminus \left\lbrace \frac{\pi}{2B} + \frac{n\pi}{B} \mid n \in \mathbb{Z} \right\rbrace \to \mathbb{R}, \quad f(x) \coloneqq A\tan(B(x - C)) + D
@@ -907,13 +895,13 @@ $$
 
 ## Triangle
 
-**Definition** (geometric).
+**Definition (Geometric).**
 
 $$
 (A, B, C \in \mathbb{R}^2) \land (A, B, C \text{ non-collinear}) \implies \triangle ABC := \overline{AB} \cup \overline{BC} \cup \overline{CA}
 $$
 
-**Notation** (standard elements).
+**Notation (Standard elements).**
 
 $$
 a = \|\overline{BC}\|, \quad b = \|\overline{CA}\|, \quad c = \|\overline{AB}\|
@@ -923,55 +911,55 @@ $$
 A = \angle BAC, \quad B = \angle ABC, \quad C = \angle BCA
 $$
 
-**Definition** (parameter space).
+**Definition (Parameter space).**
 
 $$
 \mathcal{T} = \{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c \land b + c > a \land a + c > b\}
 $$
 
-**Theorem** (angle sum).
+**Theorem (Angle sum).**
 
 $$
 A + B + C = \pi
 $$
 
-**Definition** (scalene).
+**Definition (Scalene).**
 
 $$
 \triangle ABC \text{ scalene} \iff a \neq b \land b \neq c \land a \neq c
 $$
 
-**Definition** (isosceles triangle).
+**Definition (Isosceles).**
 
 $$
 \triangle ABC \text{ isosceles} \iff (a = b \land b \neq c) \lor (a = c \land a \neq b) \lor (b = c \land b \neq a)
 $$
 
-**Definition** (equilateral triangle).
+**Definition (Equilateral).**
 
 $$
 \triangle ABC \text{ equilateral} \iff a = b \land b = c
 $$
 
-**Definition** (acute).
+**Definition (Acute).**
 
 $$
 A < \frac{\pi}{2},\ B < \frac{\pi}{2},\ C < \frac{\pi}{2}
 $$
 
-**Definition** (right).
+**Definition (Right)**.
 
 $$
 A = \frac{\pi}{2} \lor B = \frac{\pi}{2} \lor C = \frac{\pi}{2}
 $$
 
-**Definition** (obtuse).
+**Definition (Obtuse).**
 
 $$
 A > \frac{\pi}{2} \lor B > \frac{\pi}{2} \lor C > \frac{\pi}{2}
 $$
 
-**Proposition** (side ratios, special right triangles).
+**Proposition (Side ratios in special right triangles).**
 
 $$
 1 : 1 : \sqrt{2} \quad \text{(}45^\circ\text{-}45^\circ\text{-}90^\circ\text{)}
@@ -981,7 +969,7 @@ $$
 1 : \sqrt{3} : 2 \quad \text{(}30^\circ\text{-}60^\circ\text{-}90^\circ\text{)}
 $$
 
-**Theorem** (pythagorean).
+**Theorem (Pythagorean).**
 
 $$
 a^2 + b^2 = c^2 \iff \angle C = \frac{\pi}{2}
@@ -1001,7 +989,7 @@ $$
 \sqrt{c^2 - a^2} \quad \text{(leg)}
 $$
 
-**Proposition** (area).
+**Proposition (Area).**
 
 $$
 \frac{1}{2} \cdot \text{base} \cdot \text{height}
@@ -1017,7 +1005,7 @@ $$
 \frac{\sqrt{3}}{4} \cdot \text{side}^2 \quad \text{(equilateral)}
 $$
 
-**Proposition** (area).
+**Proposition (Area).**
 
 $$
 \frac{1}{2} \cdot a \cdot b \cdot \sin C
@@ -1029,79 +1017,79 @@ $$
 \frac{a^2 \cdot \sin B \cdot \sin C}{2 \cdot \sin A}
 $$
 
-**Theorem** (Heron's formula).
+**Theorem (Heron's formula)**.
 
 $$
 \sqrt{s(s-a)(s-b)(s-c)}, \quad s = \frac{a + b + c}{2}
 $$
 
-**Proposition** (perimeter).
+**Proposition (Perimeter).**
 
 $$
 a + b + c
 $$
 
-**Definition** (similarity).
+**Definition (Similarity).**
 
 $$
 \triangle ABC \sim \triangle DEF \iff (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
 $$
 
-**Proposition** (angle-angle (AA) similarity sufficient condition).
+**Proposition (Angle-angle (AA) similarity).**
 
 $$
 \angle A = \angle D \land \angle B = \angle E \implies \triangle ABC \sim \triangle DEF
 $$
 
-**Proposition** (side-angle-side (SAS) similarity).
+**Proposition (Side-angle-side (SAS) similarity).**
 
 $$
 \frac{AB}{DE} = \frac{AC}{DF} \land \angle A = \angle D \implies \triangle ABC \sim \triangle DEF
 $$
 
-**Proposition** (side-side-side (SSS) similarity).
+**Proposition (Side-side-side (SSS) similarity).**
 
 $$
 \frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD} \implies \triangle ABC \sim \triangle DEF
 $$
 
-**Proposition** (side ratios).
+**Proposition (Simlar side ratios).**
 
 $$
 \triangle ABC \sim \triangle DEF \implies \exists k \in \mathbb{R}^{+} : \frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD} = k \quad \text{(scale factor)}
 $$
 
-**Corollary** (similar perimeter).
+**Corollary (Similar perimeter).**
 
 $$
 \triangle ABC \sim \triangle DEF \implies \text{perimeter}(\triangle ABC) = k \cdot \text{perimeter}(\triangle DEF)
 $$
 
-**Corollary** (similar area).
+**Corollary (Similar area).**
 
 $$
 \triangle ABC \sim \triangle DEF \implies \text{area}(\triangle ABC) = k^2 \cdot \text{area}(\triangle DEF)
 $$
 
-**Definition** (congruence).
+**Definition (Congruence).**
 
 $$
 \triangle ABC \cong \triangle DEF \iff (AB = DE \land BC = EF \land CA = FD) \land (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
 $$
 
-**Proposition** (side-side-side (SSS) congruence).
+**Proposition (Side-side-side (SSS) congruence).**
 
 $$
 AB = DE \land BC = EF \land CA = FD \implies \triangle ABC \cong \triangle DEF
 $$
 
-**Proposition** (side-angle-side (SAS) congruence).
+**Proposition (Side-angle-side (SAS) congruence)**.
 
 $$
 AB = DE \land AC = DF \land \angle A = \angle D \implies \triangle ABC \cong \triangle DEF
 $$
 
-**Proposition** (angle-side-angle (ASA) congruence).
+**Proposition (Angle-side-angle (ASA) congruence)**.
 
 $$
 \angle A = \angle D \land \angle B = \angle E \land AB = DE \implies \triangle ABC \cong \triangle DEF
@@ -1109,7 +1097,7 @@ $$
 
 ## Cube
 
-**Definition** (cube).
+**Definition (Cube).**
 
 $$
 \{\text{side} \in \mathbb{R}^+ \mid \text{all edges} = \text{side}\}
@@ -1141,7 +1129,7 @@ $$
 T : \mathbb{R}^2 \to \mathbb{R}^2, \quad (x, y) \mapsto (x', y')
 $$
 
-**Definition** (rigid transformation).
+**Definition (Rigid transformation).**
 
 $$
 T \text{ is rigid} \iff \| T(x_1, y_1) - T(x_2, y_2) \| = \| (x_1, y_1) - (x_2, y_2) \|
@@ -1153,13 +1141,13 @@ $$
 T \text{ is rigid} \iff T \in \{T_{a,b},\ R_\theta,\ S\}
 $$
 
-**Definition** (translation).
+**Definition (Translation).**
 
 $$
 T_{a,b} : \mathbb{R}^2 \to \mathbb{R}^2, \quad (x, y) \mapsto (x + a, y + b), \quad a, b \in \mathbb{R}
 $$
 
-**Definition** (rotation).
+**Definition (Rotation).**
 
 $$
 R_\theta : \mathbb{R}^2 \to \mathbb{R}^2, \quad (x, y) \mapsto (x \cos\theta - y \sin\theta, x \sin\theta + y \cos\theta), \quad \theta \in \mathbb{R}
@@ -1179,7 +1167,7 @@ $$
 R_{\frac{3\pi}{2}}(x, y) = (y, -x)
 $$
 
-**Definition** (reflection).
+**Definition (Reflection).**
 
 $$
 S_x : \mathbb{R}^2 \to \mathbb{R}^2, \quad (x, y) \mapsto (x, -y)
@@ -1227,7 +1215,7 @@ $$
 |x|^2 = x^2
 $$
 
-**Theorem** (triangle inequality).
+**Theorem (Triangle inequality).**
 
 $$
 |x + y| \leq |x| + |y|
@@ -1239,7 +1227,7 @@ $$
 |x - y| \geq \big||x| - |y|\big|
 $$
 
-**Proposition** (inequalities).
+**Proposition (Inequalities).**
 
 $$
 |x| < a \iff -a < x < a
@@ -1437,13 +1425,13 @@ $$
 b^{\frac{m}{n}} = \sqrt[n]{b^m}
 $$
 
-**Definition** (natural exponential).
+**Definition (Natural exponential).**
 
 $$
 e = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \sum_{n=0}^{\infty} \frac{1}{n!}
 $$
 
-**Proposition** (inequalities).
+**Proposition (Inequalities).**
 
 $$
 b^x < b^y \iff x < y, \quad b > 1
@@ -1495,7 +1483,7 @@ $$
 \sqrt[n]{x^n} = |x|
 $$
 
-**Proposition** (inequalities).
+**Proposition (Inequalities).**
 
 $$
 \sqrt[n]{x} < \sqrt[n]{y} \iff x < y, \quad n \in \mathbb{N}^+
@@ -1515,7 +1503,7 @@ $$
 \log_b x = y \iff b^y = x, \quad b \in \mathbb{R}^+, \quad b \neq 1, \quad x \in \mathbb{R}^+
 $$
 
-**Definition** (natural logarithm).
+**Definition (Natural logarithm).**
 
 $$
 \ln x = \int_{1}^{x} \frac{1}{t} \, dt, \quad x > 0
@@ -1531,7 +1519,7 @@ $$
 \log x = \log_{10} x
 $$
 
-**Proposition** (exponential–logarithm inverses).
+**Proposition (Exponential–logarithm inverses).**
 
 $$
 b^{\log_b x} = x
@@ -1585,19 +1573,19 @@ $$
 \ln(a \times 10^n) = \ln a + n \ln 10
 $$
 
-**Theorem** (change of base).
+**Theorem (Change of base).**
 
 $$
 \log_b x = \frac{\log_k x}{\log_k b}, \quad k \in \mathbb{R}^+, \quad k \neq 1
 $$
 
-**Proposition** (symmetry).
+**Proposition (Symmetry).**
 
 $$
 x^{\log_x y} = y^{\log_y x}
 $$
 
-**Proposition** (iterated logarithm).
+**Proposition (Iterated logarithm).**
 
 $$
 \log \left(\log(c^d)\right) = \log(\log c) + \log d
@@ -1607,7 +1595,7 @@ $$
 \log \left(\log \left(\sqrt[d]{c}\right)\right) = \log(\log c) - \log d
 $$
 
-**Proposition** (sum and difference expansion).
+**Proposition (Sum and difference expansion).**
 
 $$
 \log_b(a + c) = \log_b a + \log_b \left(1 + \frac{c}{a}\right)
@@ -1617,7 +1605,7 @@ $$
 \log_b(a - c) = \log_b a + \log_b \left(1 - \frac{c}{a}\right)
 $$
 
-**Proposition** (inequalities).
+**Proposition (Inequalities).**
 
 $$
 \log_b x \lt \log_b y \iff x \lt y, \quad b \gt 1
@@ -1627,13 +1615,13 @@ $$
 \log_b x \lt \log_b y \iff x \gt y, \quad 0 \lt b \lt 1
 $$
 
-**Proposition** (exotic identity).
+**Proposition (Exotic identity).**
 
 $$
 x^{\frac{\log(\log x)}{\log x}} = \log x
 $$
 
-**Proposition** (integral).
+**Proposition (Integral).**
 
 $$
 \int \log_a x \, dx = x(\log_a x - \log_a e) + C
@@ -1649,25 +1637,25 @@ $$
 \text{coefficient} \cdot x + \text{constant} = 0
 $$
 
-**Definition** (linear equation).
+**Definition (Linear equation).**
 
 $$
 ax + b = 0, \quad a, b \in \mathbb{R}, \quad a \neq 0
 $$
 
-**Definition** (linear function).
+**Definition (Linear function).**
 
 $$
 f(x) = ax + b
 $$
 
-**Proposition** (root).
+**Proposition (Root).**
 
 $$
 x = -\frac{b}{a}
 $$
 
-**Proposition** (monotonicity).
+**Proposition (Monotonicity).**
 
 $$
 f \text{ strictly increasing} \iff a \gt 0
@@ -1677,13 +1665,13 @@ $$
 f \text{ strictly decreasing} \iff a \lt 0
 $$
 
-**Definition** (slope).
+**Definition (Slope).**
 
 $$
 m = \frac{y_2 - y_1}{x_2 - x_1}, \quad x_1 \neq x_2
 $$
 
-**Definition** (forms).
+**Definition (Forms).**
 
 $$
 ax + b = 0 \quad \text{(standard)}
@@ -1705,7 +1693,7 @@ $$
 ax + by + c = 0, \quad a, b \in \mathbb{R},\ (a, b) \neq (0, 0) \quad \text{(general)}
 $$
 
-**Proposition** (parallel and perpendicular lines).
+**Proposition (Parallel and perpendicular lines).**
 
 $$
 m_1 = m_2 \iff \text{lines are parallel}
@@ -1723,25 +1711,25 @@ $$
 \text{coefficient} \cdot x^2 + \text{coefficient} \cdot x + \text{constant} = 0
 $$
 
-**Definition** (quadratic equation).
+**Definition (Quadratic equation).**
 
 $$
 ax^2 + bx + c = 0, \quad a, b, c \in \mathbb{R}, \quad a \neq 0
 $$
 
-**Definition** (quadratic function).
+**Definition (Quadratic function).**
 
 $$
 f(x) = ax^2 + bx + c
 $$
 
-**Definition** (discriminant).
+**Definition (Discriminant).**
 
 $$
 \Delta \coloneqq b^2 - 4ac
 $$
 
-**Theorem** (nature of roots).
+**Theorem (Nature of roots).**
 
 $$
 \Delta > 0 \iff \text{two distinct real roots}
@@ -1755,19 +1743,19 @@ $$
 \Delta < 0 \iff \text{two complex conjugate roots}
 $$
 
-**Proposition** (domain and range).
+**Proposition (Domain and range).**
 
 $$
 \text{domain} = \mathbb{R}, \quad \text{range} = \left[-\frac{\Delta}{4a}, +\infty\right) \text{ if } a \gt 0, \quad \text{range} = \left(-\infty, -\frac{\Delta}{4a}\right] \text{ if } a \lt 0
 $$
 
-**Proposition** (symmetry).
+**Proposition (Symmetry).**
 
 $$
 f(-x) = f(x) \iff b = 0 \quad \text{(even, symmetric about } x = 0\text{)}
 $$
 
-**Definition** (vertex).
+**Definition (Vertex).**
 
 $$
 (h, k) \coloneqq \left(-\frac{b}{2a}, -\frac{\Delta}{4a}\right)
@@ -1783,7 +1771,7 @@ $$
 (h, k) \text{ is a minimum if } a \gt 0, \text{ a maximum if } a \lt 0
 $$
 
-**Definition** (forms).
+**Definition (Forms).**
 
 $$
 ax^2 + bx + c = 0 \quad \text{(standard)}
@@ -1797,55 +1785,55 @@ $$
 a(x - x_1)(x - x_2) = 0 \quad \text{(factored)}
 $$
 
-**Theorem** (quadratic formula).
+**Theorem (Quadratic formula).**
 
 $$
 x = \frac{-b \pm \sqrt{\Delta}}{2a}
 $$
 
-###### Remark. Also known as Bhaskara's formula.
+**Remark.** Also known as Bhaskara's formula.
 
-**Corollary** (rationalized form).
+**Corollary (Rationalized form).**
 
 $$
 x = \frac{2c}{-b \mp \sqrt{\Delta}}
 $$
 
-**Corollary** (repeated root).
+**Corollary (Repeated root).**
 
 $$
 \Delta = 0 \implies x = -\frac{b}{2a}
 $$
 
-**Proposition** (Vieta's formulas).
+**Proposition (Vieta's formulas).**
 
 $$
 x_1, x_2 \text{ roots of } ax^2 + bx + c = 0 \implies x_1 + x_2 = -\frac{b}{a}, \quad x_1 \cdot x_2 = \frac{c}{a}
 $$
 
-**Corollary** (factored form).
+**Corollary (Factored form).**
 
 $$
 ax^2 + bx + c = a(x - x_1)(x - x_2)
 $$
 
-**Proposition** (sum–product factorization).
+**Proposition (Sum–product factorization).**
 
 $$
 x^2 + bx + c = (x - m)(x - n) \iff m + n = -b, \quad mn = c
 $$
 
-###### Remark. Vieta's formulas (monic case).
+**Remark.** Vieta's formulas (monic case).
 
-**Proposition** (Loh's method).
+**Proposition (Loh's method).**
 
 $$
 x^2 + bx + c = 0 \implies x = -\frac{b}{2}  \pm u, \quad u \coloneqq \sqrt{\frac{b^2}{4} - c}
 $$
 
-###### Remark. Roots are symmetric about their average $(x = \text{average} \pm \text{deviation})$.
+**Remark.** Roots are symmetric about their average $(x = \text{average} \pm \text{deviation})$.
 
-**Proposition** (root identities).
+**Proposition (Root identities).**
 
 $$
 (x_1 - x_2)^2 = \frac{\Delta}{a^2}
@@ -1855,7 +1843,7 @@ $$
 x_1^2 + x_2^2 = \frac{b^2 - 2ac}{a^2}
 $$
 
-**Proposition** (completing the square).
+**Proposition (Completing the square).**
 
 $$
 ax^2 + bx + c = a\left(x + \frac{b}{2a}\right)^2 - \frac{\Delta}{4a}
@@ -1863,43 +1851,43 @@ $$
 
 ### Cubic Equation
 
-**Definition** (cubic equation).
+**Definition (Cubic equation).**
 
 $$
 ax^3 + bx^2 + cx + d = 0, \quad a, b, c, d \in \mathbb{R}, \quad a \neq 0
 $$
 
-**Definition** (cubic function).
+**Definition (Cubic function).**
 
 $$
 f(x) = ax^3 + bx^2 + cx + d
 $$
 
-**Proposition** (domain and range).
+**Proposition (Domain and range).**
 
 $$
 \text{domain} = \mathbb{R}, \quad \text{range} = \mathbb{R}
 $$
 
-**Proposition** (symmetry).
+**Proposition (Symmetry).**
 
 $$
 f(-x) = -f(x) \iff b = d = 0 \quad \text{(odd, symmetric about origin)}
 $$
 
-**Definition** (depressed cubic).
+**Definition (Depressed cubic).**
 
 $$
 x = t - \frac{b}{3a} \implies t^3 + pt + q = 0, \quad p = \frac{3ac - b^2}{3a^2}, \quad q = \frac{2b^3 - 9abc + 27a^2 d}{27a^3}
 $$
 
-**Definition** (discriminant).
+**Definition (Discriminant).**
 
 $$
 \Delta \coloneqq 18abcd - 4b^3 d + b^2 c^2 - 4ac^3 - 27a^2 d^2
 $$
 
-**Theorem** (nature of roots).
+**Theorem (Nature of roots).**
 
 $$
 \Delta > 0 \iff \text{three distinct real roots}
@@ -1913,31 +1901,31 @@ $$
 \Delta < 0 \iff \text{one real root and two complex conjugate roots}
 $$
 
-**Definition** (Cardano auxiliary).
+**Definition (Cardano auxiliary).**
 
 $$
 D \coloneqq \left(\frac{q}{2}\right)^2 + \left(\frac{p}{3}\right)^3
 $$
 
-**Theorem** (Cardano's formula).
+**Theorem (Cardano's formula).**
 
 $$
 t = \sqrt[3]{-\frac{q}{2} + \sqrt{D}} + \sqrt[3]{-\frac{q}{2} - \sqrt{D}}, \quad x = t - \frac{b}{3a}
 $$
 
-**Proposition** (Vieta's formulas).
+**Proposition (Vieta's formulas).**
 
 $$
 x_1, x_2, x_3 \text{ roots} \implies x_1 + x_2 + x_3 = -\frac{b}{a}, \quad x_1 x_2 + x_1 x_3 + x_2 x_3 = \frac{c}{a}, \quad x_1 x_2 x_3 = -\frac{d}{a}
 $$
 
-###### Remark. Abel and Ruffini proved no general algebraic solution exists for degree $\geq 5$.
+**Remark.** Abel and Ruffini proved no general algebraic solution exists for degree $\geq 5$.
 
 # Differential Calculus 
 
 ## Limit
 
-**Definition** ($\epsilon - \delta$ definition).
+**Definition (**$\epsilon - \delta$ **definition).**
 
 $$
 \lim_{x \to a} f(x) = L \iff \forall \epsilon > 0 \exists \delta > 0 \forall x \in \mathbb{R}, \big(a-\delta < x < a + \delta, x \neq a \implies L-\epsilon < f(x) < L+\epsilon\big)
@@ -1945,19 +1933,19 @@ $$
 
 ## Derivative
 
-**Definition** (derivative at a point).
+**Definition (Derivative at a point).**
 
 $$
 f'(a) \coloneqq \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}, \quad f : \mathbb{R} \to \mathbb{R}, \quad a \in \mathbb{R}
 $$
 
-**Definition** (derivative as a function).
+**Definition (Derivative as a function).**
 
 $$
 f'(x) \coloneqq \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
 $$
 
-**Notation** (Leibniz).
+**Notation (Leibniz).**
 
 $$
 \frac{dy}{dx} \coloneqq \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}, \quad y = f(x)
@@ -1967,37 +1955,37 @@ $$
 
 ## Integration
 
-**Definition** (Riemann sum).
+**Definition (Riemann sum)**.
 
 $$
 S_n \coloneqq \sum_{i=1}^{n} f(x_i^{\ast}) \Delta x_i, \quad x_i^{\ast} \in [x_{i-1}, x_i], \quad a = x_0 \lt \cdots \lt x_n = b
 $$
 
-**Definition** (Riemann integral).
+**Definition (Riemann integral)**.
 
 $$
 \int_{a}^{b} f(x) \ dx \coloneqq \lim_{\max \Delta x_i \to 0} \sum_{i=1}^{n} f(x_i^\ast) \Delta x_i
 $$
 
-**Notation** (uniform partition).
+**Notation (Uniform partition)**.
 
 $$
 \int_{a}^{b} f(x) \ dx = \lim_{n \to \infty} \sum_{i=1}^{n} f\left(a + i \cdot \frac{b-a}{n}\right) \frac{b-a}{n}
 $$
 
-**Definition** (antiderivative).
+**Definition (Antiderivative).**
 
 $$
 F'(x) = f(x) \quad \forall x \in I
 $$
 
-**Definition** (indefinite integral).
+**Definition (Indefinite integral).**
 
 $$
 \int f(x) \ dx \coloneqq F(x) + C, \quad C \in \mathbb{R}
 $$
 
-**Proposition** (properties).
+**Proposition (Properties).**
 
 $$
 \int k f(x) \, dx = k \int f(x) \, dx, \quad k \in \mathbb{R}
@@ -2023,19 +2011,19 @@ $$
 \int f(ax + b) \, dx = \frac{1}{a} F(ax + b) + C, \quad a \neq 0
 $$
 
-**Theorem** (Fundamental Theorem of Calculus, Part I).
+**Theorem (Fundamental Theorem of Calculus, Part I)**.
 
 $$
 F(x) \coloneqq \int_{a}^{x} f(t) \ dt \implies F'(x) = f(x)
 $$
 
-**Theorem** (Fundamental Theorem of Calculus, Part II).
+**Theorem (Fundamental Theorem of Calculus, Part II).**
 
 $$
 \int_{a}^{b} f(x) \ dx = F(b) - F(a)
 $$
 
-**Proposition** (properties).
+**Proposition (Properties).**
 
 $$
 \int_{a}^{a} f(x) \, dx = 0
