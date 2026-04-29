@@ -747,6 +747,10 @@ $$
 f : \mathbb{R} \to \begin{cases} \mathbb{R}^+ \cup \{0\} & n \text{ even} \\ \mathbb{R} & n \text{ odd} \end{cases}, \quad f(x) = x^n, \quad n \in \mathbb{Z}
 $$
 
+$$
+f : \mathbb{R} \to \begin{cases} \mathbb{R}_{\geq 0} & n \text{ even} \\ \mathbb{R} & n \text{ odd} \end{cases}, \quad f(x) = x^n
+$$
+
 **Proposition** (parity).
 
 $$
@@ -763,6 +767,10 @@ $$
 f : \mathbb{R} \to \mathbb{R}^+ \cup \{0\}, \quad f(x) = |x|
 $$
 
+$$
+f : \mathbb{R} \to \mathbb{R}_{\geq 0}, \quad f(x) = |x|
+$$
+
 **Proposition** (parity).
 
 $$
@@ -773,6 +781,10 @@ $$
 
 $$
 f : \mathbb{R}^+ \cup \{0\} \to \mathbb{R}^+ \cup \{0\}, \quad f(x) = \sqrt{x}
+$$
+
+$$
+f : \mathbb{R}_{\geq 0} \to \mathbb{R}_{\geq 0}, \quad f(x) = \sqrt{x}
 $$
 
 **Proposition** (strictly increasing).
