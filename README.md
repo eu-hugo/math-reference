@@ -805,12 +805,6 @@ $$
 f : \mathbb{R}_{\geq 0} \to \mathbb{R}_{\geq 0}, \quad f(x) = \sqrt{x}
 $$
 
-**Proposition** (strictly increasing).
-
-$$
-x_1 \lt x_2 \implies f(x_1) \lt f(x_2)
-$$
-
 **Definition** (reciprocal function).
 
 $$
